@@ -12,20 +12,16 @@ output	reg [7:0]	data_wr;
 output	reg [13:0]	addr;
 output	reg			wen;
 
-reg [14:0] counter, num; // 0 -> 16383 (inclusive) SUM(1,2,4,8,16,32,64,128,256,512,1024,2048,4096,8192) = 16383
+reg [14:0] num; // 0 -> 16383 (inclusive) SUM(1,2,4,8,16,32,64,128,256,512,1024,2048,4096,8192) = 16383
 reg [6:0] row, column; // max 127
 reg [7:0] temp [0:8]; // store each patch data.
-reg [7:0] sram [0:16383]; // reg [DATA_WIDTH-1 : 0] ram [2** ADDR_WIDTH-1 : 0]
 reg recount;
-reg [3:0] index, index2;
+reg [3:0] index, index2, index3;
+
 // Declare state register
 reg	[1:0] state, nxt_state;
-
-
-reg [7:0] res [0:16385];
 // Declare states
 parameter [1:0] S0 = 0, S1 = 1, S2 = 2, S3 = 3;
-
 
 /*********************************************************************
 	1 sequential + 2 combinational, common circuit design pattern.
@@ -49,7 +45,7 @@ always @ (*)
 	case (state)
 		S0:
 			begin
-			if (counter == 16385)
+			if (index3 == 9)
 				begin
 				nxt_state = S1;
 				recount = 1;
@@ -62,39 +58,21 @@ always @ (*)
 			end
 		S1:
 			begin
-			nxt_state = S2;
-			recount = 1;
+			if (index2 == 7)
+				begin
+				nxt_state = S2;
+				recount = 1;
+				end
+			else
+				begin
+				nxt_state = S1;
+				recount = 0;
+				end
 			end
 		S2:
 			begin
-			if (num == 16385)
-				begin
-				nxt_state = S3;
-				recount = 1;
-				end
-			else if (index2 == 7)
-				begin
-				nxt_state = S1;
-				recount = 1;
-				end
-			else
-				begin
-				nxt_state = S2;
-				recount = 0;
-				end
-			end
-		S3:
-			begin
-			if (counter == 16384)
-				begin
-				nxt_state = S1;
-				recount = 1;
-				end
-			else
-				begin
-				nxt_state = S3;
-				recount = 0;
-				end
+			nxt_state = S0;
+			recount = 1;
 			end
 	endcase
 	end
@@ -131,7 +109,7 @@ always @(posedge clk)
 	else
 		begin
 		case (state)
-			S2 :
+			S1 :
 				begin
 				if (index2 < 8)
 					begin
@@ -178,7 +156,7 @@ always @(posedge clk)
 	else
 		begin
 		busy <= 1'b1;
-		if (state == S3 && counter == 16384)
+		if (num == 16385)
 			begin
 			busy <= 1'b0;
 			end
@@ -194,7 +172,7 @@ always @(posedge clk)
 		column <= 0;
 		end
 	case (state)
-	S1 :
+	S2 :
 		begin
 		if (column == 127)
 			begin
@@ -209,19 +187,18 @@ always @(posedge clk)
 	endcase
 	end
 
-// Counter
+// control index3 signal
 always @(posedge clk)
 	begin
-	if (reset || recount)
+	if (reset || (state == S2))
 		begin
-		counter <= 0;
+		index3 <= 0;
 		end
 	else
 		begin
-		counter <= counter + 1;
+		index3 <= index3 + 1;
 		end
 	end
-
 /*********************************************************************
 	Datapath
 *********************************************************************/
@@ -229,123 +206,380 @@ always @(posedge clk)
 always @(posedge clk)
 	begin
 	case (state)
-		S0: // read pixel value
+		S0: // read pixel value. Must be carefully construct the below if, else if flow. Absolute coordinate must be place before a target range.
 			begin
-			iaddr <= counter;
-			sram[counter-1] <= idata;
+			if ((row == 0) && (column == 0)) // OK Pixel 0: first row, first column
+				begin
+				case (index3)
+					4 :
+						begin
+						iaddr <= 1;
+						temp[index3-1] <= idata;
+						end
+					5 :
+						begin
+						iaddr <= 128;
+						temp[index3-1] <= idata;
+						end
+					7 :
+						begin
+						iaddr <= 129;
+						temp[index3-1] <= idata;
+						end
+					8 :
+						begin
+						iaddr <= 0;
+						temp[index3-1] <= idata;
+						end
+					default :
+						begin
+						temp[index3-1] <= 0;
+						iaddr <= 0;
+						end
+				endcase
+				end
+			else if ((row == 0) && (column == 127)) // OK Pixel 127: first row, last column 
+				begin
+				case (index3)
+					3 :
+						begin
+						iaddr <= 127;
+						temp[index3] <= idata;
+						end
+					4 :
+						begin
+						//iaddr <= 254;
+						temp[index3] <= idata;
+						end
+					5 :
+						begin
+						iaddr <= 254;
+						temp[index3] <= 0;
+						end
+					6 :
+						begin
+						iaddr <= 255;
+						temp[index3] <= idata;
+						end
+					7 :
+						begin
+						//iaddr <= 0;
+						temp[index3] <= idata;
+						end
+					default :
+						begin
+						iaddr <= 126;
+						temp[index3] <= 0;
+						end
+				endcase
+				end
+			else if ((row == 127) && (column == 0)) // OK last row, first column 
+				begin
+				case (index3)
+					1 :
+						begin
+						iaddr <= 16129;
+						temp[index3] <= idata;
+						end
+					2 :
+						begin
+						iaddr <= 16129;
+						temp[index3] <= idata;
+						end
+					3 :
+						begin
+						iaddr <= 16256;
+						temp[index3] <= 0;
+						end
+					4 :
+						begin
+						iaddr <= 16257;
+						temp[index3] <= idata;
+						end
+					5 :
+						begin
+						iaddr <= 16257;
+						temp[index3] <= idata;
+						end
+					8 : // added this 
+						begin
+						iaddr <= num - 129;
+						temp[index3] <= 0;
+						end
+					default :
+						begin
+						temp[index3] <= 0;
+						iaddr <= 16128;
+						end
+				endcase
+				end
+			else if ((row == 127) && (column == 127)) // Pixel 16383: last row, last column 
+				begin
+				case (index3)
+					0 :
+						begin
+						iaddr <= 16254;
+						temp[index3] <= idata;
+						end
+					1 :
+						begin
+						iaddr <= 16255;
+						temp[index3] <= idata;
+						end
+					3 :
+						begin
+						iaddr <= 16382;
+						temp[index3] <= idata;
+						end
+					4 :
+						begin
+						iaddr <= 16383;
+						temp[index3] <= idata;
+						end
+					default :
+						begin
+						temp[index3] <= 0;
+						//iaddr <= num - 1;
+						end
+				endcase
+				end
+			else if ((row == 0) && (column > 0)) // OK Pixels 1-126: first row, middle column 
+				begin
+				case (index3)
+					3 :
+						begin
+						iaddr <= num;
+						temp[index3] <= idata;
+						end
+					4 :
+						begin
+						iaddr <= num + 1;
+						temp[index3] <= idata;
+						end
+					5 :
+						begin
+						iaddr <= num + 127;
+						temp[index3] <= idata;
+						end
+					6 :
+						begin
+						iaddr <= num + 128;
+						temp[index3] <= idata;
+						end
+					7 :
+						begin
+						iaddr <= num + 129;
+						temp[index3] <= idata;
+						end
+					8 :
+						begin
+						iaddr <= num + 129;
+						temp[index3] <= idata;
+						end
+					default :
+						begin
+						temp[index3] <= 0;
+						iaddr <= num - 1;
+						end
+				endcase
+				end
+			else if ((row > 0) && (column == 0)) // OK middle row, first column 
+				begin
+				case (index3)
+					1 :
+						begin
+						iaddr <= num - 127;
+						temp[index3] <= idata;
+						end
+					2 :
+						begin
+						iaddr <= num - 1;
+						temp[index3] <= idata;
+						end
+					3 :
+						begin
+						iaddr <= num;
+						temp[index3] <= 0;
+						end
+					4 :
+						begin
+						iaddr <= num + 1;
+						temp[index3] <= idata;
+						end
+					5 :
+						begin
+						iaddr <= num + 127;
+						temp[index3] <= idata;
+						end
+					6 :
+						begin
+						iaddr <= num + 128;
+						temp[index3] <= 0;
+						end
+					7 :
+						begin
+						iaddr <= num + 129;
+						temp[index3] <= idata;
+						end
+					8 :
+						begin
+						iaddr <= num - 128;
+						temp[index3] <= idata;
+						end
+					default :
+						begin
+						temp[index3] <= 0;
+						iaddr <= num - 128;
+						end
+				endcase
+				end
+			else if ((row > 0) && (column == 127)) // OK middle row, last column 
+				begin
+				case (index3)
+					0 :
+						begin
+						iaddr <= num - 128;
+						temp[index3] <= idata;
+						end
+					1 :
+						begin
+						iaddr <= num - 127;
+						temp[index3] <= idata;
+						end
+					2 :
+						begin
+						iaddr <= num - 1;
+						temp[index3] <= 0;
+						end
+					3 :
+						begin
+						iaddr <= num;
+						temp[index3] <= idata;
+						end
+					4 :
+						begin
+						iaddr <= num;
+						temp[index3] <= idata;
+						end
+					5 :
+						begin
+						iaddr <= num + 127;
+						temp[index3] <= 0;
+						end
+					6 :
+						begin
+						iaddr <= num + 128;
+						temp[index3] <= idata;
+						end
+					7 :
+						begin
+						iaddr <= num + 129;
+						temp[index3] <= idata;
+						end
+					default :
+						begin
+						temp[index3] <= 0;
+						//iaddr <= num - 1;
+						end
+				endcase
+				end
+			else if ((row == 127) && (column > 0)) // OK last row, middle column 
+				begin
+				case (index3)
+					0 :
+						begin
+						iaddr <= num - 128;
+						temp[index3] <= idata;
+						end
+					1 :
+						begin
+						iaddr <= num - 127;
+						temp[index3] <= idata;
+						end
+					2 :
+						begin
+						iaddr <= num - 1;
+						temp[index3] <= idata;
+						end
+					3 :
+						begin
+						iaddr <= num;
+						temp[index3] <= idata;
+						end
+					4 :
+						begin
+						iaddr <= num + 1;
+						temp[index3] <= idata;
+						end
+					5 :
+						begin
+						iaddr <= num + 126;
+						temp[index3] <= idata;
+						end
+					default :
+						begin
+						temp[index3] <= 0;
+						iaddr <= num - 128;
+						end
+				endcase
+				end
+			else //  OK
+				begin
+				case (index3)
+					0 :
+						begin
+						iaddr <= num - 128;
+						temp[index3] <= idata;
+						end
+					1 :
+						begin
+						iaddr <= num - 127;
+						temp[index3] <= idata;
+						end
+					2 :
+						begin
+						iaddr <= num - 1;
+						temp[index3] <= idata;
+						end
+					3 :
+						begin
+						iaddr <= num;
+						temp[index3] <= idata;
+						end
+					4 :
+						begin
+						iaddr <= num + 1;
+						temp[index3] <= idata;
+						end
+					5 :
+						begin
+						iaddr <= num + 127;
+						temp[index3] <= idata;
+						end
+					6 :
+						begin
+						iaddr <= num + 128;
+						temp[index3] <= idata;
+						end
+					7 :
+						begin
+						iaddr <= num + 129;
+						temp[index3] <= idata;
+						end
+					8 :
+						begin
+						iaddr <= num - 128;
+						temp[index3] <= idata;
+						end
+					default :
+						begin
+						temp[index3] <= 0;
+						//iaddr <= num - 129;
+						end
+				endcase
+				end
 			end
-		S1: // zero padding, divided into 9 cases, different padding method for each case. 
-			begin
-			if ((row == 0) && (column == 0)) // first row, first column
-				begin
-				temp[0] <= 0;
-				temp[1] <= 0;
-				temp[2] <= 0;
-				temp[3] <= 0;
-				temp[4] <= sram[0];
-				temp[5] <= sram[1];
-				temp[6] <= 0;
-				temp[7] <= sram[128];
-				temp[8] <= sram[129];
-				end
-			else if ((row == 0) && (column == 127)) // first row, last column 
-				begin
-				temp[0] <= 0;
-				temp[1] <= 0;
-				temp[2] <= 0;
-				temp[3] <= sram[126];
-				temp[4] <= sram[127];
-				temp[5] <= 0;
-				temp[6] <= sram[254];
-				temp[7] <= sram[255];
-				temp[8] <= 0;
-				end
-			else if ((row == 127) && (column == 0)) // last row, first column 
-				begin
-				temp[0] <= 0;
-				temp[1] <= sram[16128];
-				temp[2] <= sram[16129];
-				temp[3] <= 0;
-				temp[4] <= sram[16256];
-				temp[5] <= sram[16257];
-				temp[6] <= 0;
-				temp[7] <= 0;
-				temp[8] <= 0;
-				end
-			else if ((row == 127) && (column == 127)) // last row, last column 
-				begin
-				temp[0] <= sram[16254];
-				temp[1] <= sram[16255];
-				temp[2] <= 0;
-				temp[3] <= sram[16382];
-				temp[4] <= sram[16383];
-				temp[5] <= 0;
-				temp[6] <= 0;
-				temp[7] <= 0;
-				temp[8] <= 0;
-				end
-			else if ((row == 0) && (column > 0)) // first row, middle column 
-				begin
-				temp[0] <= 0;
-				temp[1] <= 0;
-				temp[2] <= 0;
-				temp[3] <= sram[num - 1];
-				temp[4] <= sram[num];
-				temp[5] <= sram[num + 1];
-				temp[6] <= sram[num + 127];
-				temp[7] <= sram[num + 128];
-				temp[8] <= sram[num + 129];
-				end
-			else if ((row > 0) && (column == 0)) // first column, middle row
-				begin
-				temp[0] <= 0;
-				temp[1] <= sram[num - 128];
-				temp[2] <= sram[num - 127];
-				temp[3] <= 0;
-				temp[4] <= sram[num];
-				temp[5] <= sram[num + 1];
-				temp[6] <= 0;
-				temp[7] <= sram[num + 128];
-				temp[8] <= sram[num + 129];
-				end
-			else if ((row > 0) && (column == 127)) // last column, middle row 
-				begin
-				temp[0] <= sram[num - 129];
-				temp[1] <= sram[num - 128];
-				temp[2] <= 0;
-				temp[3] <= sram[num - 1];
-				temp[4] <= sram[num];
-				temp[5] <= 0;
-				temp[6] <= sram[num + 127];
-				temp[7] <= sram[num + 128];
-				temp[8] <= 0;
-				end
-			else if ((row == 127) && (column > 0)) // last row, middle column
-				begin
-				temp[0] <= sram[num - 129];
-				temp[1] <= sram[num - 128];
-				temp[2] <= sram[num - 127];
-				temp[3] <= sram[num - 1];
-				temp[4] <= sram[num];
-				temp[5] <= sram[num + 1];
-				temp[6] <= 0;
-				temp[7] <= 0;
-				temp[8] <= 0;
-				end
-			else // no padding needed
-				begin
-				temp[0] <= sram[num - 129];
-				temp[1] <= sram[num - 128];
-				temp[2] <= sram[num - 127];
-				temp[3] <= sram[num - 1];
-				temp[4] <= sram[num];
-				temp[5] <= sram[num + 1];
-				temp[6] <= sram[num + 127];
-				temp[7] <= sram[num + 128];
-				temp[8] <= sram[num + 129];
-				end
-			end
-		S2: // find median using bubble sort.
+		S1: // find median using bubble sort.
 			begin
 			if (temp[index] > temp[index+1])
 				begin
@@ -355,19 +589,12 @@ always @(posedge clk)
 				temp[index+1] <= temp[index];
 				temp[index+1] <= temp[index];
 				end
-			if (index2 == 7)
-				begin
-				res[num-1] = temp[4];
-				end
 			end
-		S3: // output resulted image to 'result memory'.
+		S2: // output resulted image to 'result memory'.
 			begin
-			if (counter < 16384)
-				begin
-				wen <= 1;
-				addr <= counter;
-				data_wr <= res[counter];
-				end
+			wen <= 1;
+			addr <= num - 1;
+			data_wr <= temp[4];
 			end
 	endcase
 	end
