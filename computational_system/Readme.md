@@ -1,4 +1,4 @@
-Combinational area: 5109.174025
+Combinational area: 5109.174025 /Br
 Buf/Inv area: 482.061593
 Noncombinational area: 2395.031452
 Macro/Black Box area: 0
