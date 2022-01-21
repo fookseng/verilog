@@ -11,4 +11,4 @@ Total cell area: 7504.205477 \
 cycle: 30 \
 data required time: 30.40 \
 data arrival time: -28.09 \
-slack (MET) 2.31 \
+slack (MET) 2.31 
