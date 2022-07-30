@@ -1,0 +1,1 @@
+s1(30Jul2022:19:59:40):  ncverilog testfixture.v CS_syn.v -v tsmc13_neg.v +define+SDF 
