@@ -1,5 +1,5 @@
 `timescale 1ns/10ps
-`define CYCLE      10.0  
+`define CYCLE      9.5 
 `define SDFFILE    "./JAM_syn.sdf"
 `define End_CYCLE  10000000
 `define PAT        "cost_rom"
