@@ -1,8 +1,4 @@
 // A total of 40320 permutations. The maximum cycle allowable: 430000 cycles, (deriving new permutation + calculating cost) must be done within 10.66 cycles in order to achieve Grade A. 
-// Total cell area: compile:8395.34
-// Cycles: 362886
-// Modified date: 02/07/2022
-// Grade A criteria: cycle < 430,000. Total cell area < 10,000.
 
 module JAM 
 #(parameter N = 7) // 8 jobs and 8 workers
@@ -21,7 +17,6 @@ reg [2:0] array[0:N];
 reg [2:0] array_tmp[0:N];
 reg [2:0] pivot; 
 reg [2:0] swap_pos;
-reg flag;
 reg [3:0] index; 
 reg [9:0] total_cost;
 integer i;
@@ -253,42 +248,33 @@ end
 // algorithm step 2: The number which is the smallest but larger than pivot. 
 always@(*)
 begin
-	swap_pos = 3'd0;
-	flag = 1'b0;
 	if(array[pivot] < array[7])
 		begin
 			swap_pos = 3'd7;
-			flag = 1'b1; 
 		end
-	if(array[pivot] < array[6] && (!flag))
+	else if(array[pivot] < array[6])
 		begin
 			swap_pos = 3'd6;
-			flag = 1'b1; 
 		end
-	if(array[pivot] < array[5] && (!flag))
+	else if(array[pivot] < array[5])
 		begin
 			swap_pos = 3'd5;
-			flag = 1'b1; 
 		end
-	if(array[pivot] < array[4] && (!flag))
+	else if(array[pivot] < array[4])
 		begin
 			swap_pos = 3'd4;
-			flag = 1'b1; 
 		end
-	if(array[pivot] < array[3] && (!flag))
+	else if(array[pivot] < array[3])
 		begin
 			swap_pos = 3'd3;
-			flag = 1'b1; 
 		end
-	if(array[pivot] < array[2] && (!flag))
+	else if(array[pivot] < array[2])
 		begin
 			swap_pos = 3'd2;
-			flag = 1'b1; 
 		end
-	if(array[pivot] < array[1] && (!flag))
+	else
 		begin
 			swap_pos = 3'd1;
-			flag = 1'b1; 
 		end
 end
 
