@@ -1,0 +1,340 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Aug 01, 2022 at 16:32:58 CST
+ncverilog
+	testfixture.v
+	triangle_syn.v
+	-v
+	tsmc13_neg.v
+	+define+SDF
+file: testfixture.v
+	module worklib.test:v
+		errors: 0, warnings: 0
+file: triangle_syn.v
+	module worklib.triangle_DW_mult_uns_0:v
+		errors: 0, warnings: 0
+	module worklib.triangle:v
+		errors: 0, warnings: 0
+file: tsmc13_neg.v
+	module tsmc13_neg.BUFX12:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVX3:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVX12:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI211XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI22XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI221XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI2BB2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AO21XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AO22XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AO22X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.MX2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.MXI2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND3X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND3X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND4X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2BXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2BX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR3X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2BXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR3BX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OR2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OR2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OR2X4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OR2X8:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OR3X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI21XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI211X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI221XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI221X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI222XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI31XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI32X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI2BB1XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI2BB1X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI2BB1X4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI2BB2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OA21XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OA21X4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OA22X4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XOR2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XOR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XOR3X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XNOR2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XNOR3X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKBUFX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKBUFX3:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKINVX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKINVX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKINVX6:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKINVX12:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKMX2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.ADDHXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.ADDFXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.ADDFX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.ADDFHX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFQX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFQX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFQXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFRXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFRX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFRX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.EDFFXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFHQX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFHQX4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFHQX8:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFRHQX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFRHQX8:v
+		errors: 0, warnings: 0
+	primitive tsmc13_neg.udp_mux2:v
+		errors: 0, warnings: 0
+	primitive tsmc13_neg.udp_dff:v
+		errors: 0, warnings: 0
+	primitive tsmc13_neg.udp_edff:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+		Caching library 'tsmc13_neg' ....... Done
+	Elaborating the design hierarchy:
+  EDFFXL \Ycoor_reg[2][2]  ( .D(yi[2]), .E(n217), .CK(clk), .Q(\Ycoor[2][2] )
+                         |
+ncelab: *W,CUVWSP (./triangle_syn.v,124|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19722): QN
+
+  EDFFXL \Ycoor_reg[2][1]  ( .D(yi[1]), .E(n217), .CK(clk), .Q(\Ycoor[2][1] )
+                         |
+ncelab: *W,CUVWSP (./triangle_syn.v,126|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19722): QN
+
+  EDFFXL \Xcoor_reg[2][1]  ( .D(xi[1]), .E(n217), .CK(clk), .QN(n63) );
+                         |
+ncelab: *W,CUVWSP (./triangle_syn.v,130|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19722): Q
+
+  EDFFXL \Xcoor_reg[2][0]  ( .D(xi[0]), .E(n217), .CK(clk), .QN(n64) );
+                         |
+ncelab: *W,CUVWSP (./triangle_syn.v,131|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19722): Q
+
+  EDFFXL \Xcoor_reg[2][2]  ( .D(xi[2]), .E(n217), .CK(clk), .QN(n62) );
+                         |
+ncelab: *W,CUVWSP (./triangle_syn.v,132|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19722): Q
+
+  EDFFXL \Xcoor_reg[1][0]  ( .D(xi[0]), .E(n173), .CK(clk), .QN(n60) );
+                         |
+ncelab: *W,CUVWSP (./triangle_syn.v,137|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19722): Q
+
+  EDFFXL \temp_reg[0]  ( .D(flag[0]), .E(n179), .CK(clk), .QN(n345) );
+                     |
+ncelab: *W,CUVWSP (./triangle_syn.v,144|21): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19722): Q
+
+  EDFFXL \temp_reg[2]  ( .D(flag[2]), .E(n179), .CK(clk), .Q(temp[2]) );
+                     |
+ncelab: *W,CUVWSP (./triangle_syn.v,151|21): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19722): QN
+
+  EDFFXL \temp_reg[3]  ( .D(flag[3]), .E(n179), .CK(clk), .QN(n220) );
+                     |
+ncelab: *W,CUVWSP (./triangle_syn.v,152|21): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19722): Q
+
+  DFFRX1 \counter_reg[1]  ( .D(n167), .CK(clk), .RN(n206), .QN(n254) );
+                        |
+ncelab: *W,CUVWSP (./triangle_syn.v,158|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		tsmc13_neg.ADDFHX2:v <0x35a4cc1a>
+			streams:   0, words:     0
+		tsmc13_neg.ADDFX2:v <0x2cfc72b8>
+			streams:   0, words:     0
+		tsmc13_neg.ADDFXL:v <0x6c76c6fe>
+			streams:   0, words:     0
+		tsmc13_neg.ADDHXL:v <0x42c72251>
+			streams:   0, words:     0
+		tsmc13_neg.CLKMX2X2:v <0x50088e7f>
+			streams:   0, words:     0
+		tsmc13_neg.DFFHQX2:v <0x7c6d60b6>
+			streams:   0, words:     0
+		tsmc13_neg.DFFHQX4:v <0x3a9d64df>
+			streams:   0, words:     0
+		tsmc13_neg.DFFHQX8:v <0x7a4f91d7>
+			streams:   0, words:     0
+		tsmc13_neg.DFFQX1:v <0x7f2aa2b7>
+			streams:   0, words:     0
+		tsmc13_neg.DFFQX2:v <0x61af1cde>
+			streams:   0, words:     0
+		tsmc13_neg.DFFQXL:v <0x6edf6111>
+			streams:   0, words:     0
+		tsmc13_neg.DFFRHQX2:v <0x561076a4>
+			streams:   0, words:     0
+		tsmc13_neg.DFFRHQX8:v <0x4dc133aa>
+			streams:   0, words:     0
+		tsmc13_neg.DFFRX1:v <0x31b98a48>
+			streams:   0, words:     0
+		tsmc13_neg.DFFRX1:v <0x3c6030ab>
+			streams:   0, words:     0
+		tsmc13_neg.DFFRX2:v <0x2cf771d4>
+			streams:   0, words:     0
+		tsmc13_neg.DFFRXL:v <0x50fe0cfe>
+			streams:   0, words:     0
+		tsmc13_neg.DFFXL:v <0x0e71f29f>
+			streams:   0, words:     0
+		tsmc13_neg.EDFFXL:v <0x24e1f835>
+			streams:   0, words:     0
+		tsmc13_neg.EDFFXL:v <0x493c7742>
+			streams:   0, words:     0
+		tsmc13_neg.EDFFXL:v <0x6f9f7ad6>
+			streams:   0, words:     0
+		tsmc13_neg.MX2XL:v <0x3a43411e>
+			streams:   0, words:     0
+		tsmc13_neg.MXI2X1:v <0x5c948dc6>
+			streams:   0, words:     0
+		tsmc13_neg.XNOR2XL:v <0x08d32395>
+			streams:   0, words:     0
+		tsmc13_neg.XNOR3X1:v <0x25efbd28>
+			streams:   0, words:     0
+		tsmc13_neg.XOR2X1:v <0x27d6c065>
+			streams:   0, words:     0
+		tsmc13_neg.XOR2XL:v <0x76e42ef7>
+			streams:   0, words:     0
+		tsmc13_neg.XOR3X1:v <0x1ddec4d4>
+			streams:   0, words:     0
+		worklib.test:v <0x449dee9a>
+			streams:   8, words: 19384
+		worklib.triangle:v <0x29c985b0>
+			streams:   0, words:     0
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                 304      81
+		UDPs:                     52       3
+		Primitives:              546       8
+		Timing outputs:          327      80
+		Registers:                70      39
+		Scalar wires:            386       -
+		Expanded wires:            6       2
+		Always blocks:             3       3
+		Initial blocks:            5       5
+		Pseudo assignments:        1       1
+		Timing checks:           405      48
+		Delayed tcheck signals:  127      41
+		Simulation timescale:    1ps
+	Writing initial simulation snapshot: worklib.test:v
+Loading snapshot worklib.test:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+ncsim: *W,DVEXACC: some objects excluded from $dumpvars due to access restrictions, use +access+r on command line for access to all objects.
+            File: ./testfixture.v, line = 39, pos = 11
+           Scope: test
+            Time: 0 FS + 0
+
+
+****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+
+Waiting for the rendering operation of the triangle points with:
+(x1, y1)=(1, 0)
+(x2, y2)=(7, 2)
+(x3, y3)=(1, 7)
+Waiting for the rendering operation of the triangle points with:
+(x1, y1)=(6, 1)
+(x2, y2)=(0, 3)
+(x3, y3)=(6, 6)
+PASS! All data have been generated successfully!
+---------------------------------------------
+Total delay:       54000 ns
+---------------------------------------------
+Simulation complete via $finish(1) at time 5450 NS + 0
+./testfixture.v:146       $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Aug 01, 2022 at 16:32:59 CST  (total: 00:00:01)
