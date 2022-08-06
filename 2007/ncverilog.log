@@ -1,0 +1,1540 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Aug 06, 2022 at 18:39:16 CST
+ncverilog
+	testfixture.v
+	lcd_ctrl_syn.v
+	-v
+	tsmc13_neg.v
+	+define+SDF
+Recompiling... reason: file './testfixture.v' is newer than expected.
+	expected: Sat Aug  6 18:35:34 2022
+	actual:   Sat Aug  6 18:39:15 2022
+file: testfixture.v
+	module worklib.test:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+		Caching library 'tsmc13_neg' ....... Done
+	Elaborating the design hierarchy:
+  EDFFX1 \Mem_reg[1][7]  ( .D(datain[7]), .E(n659), .CK(clk), .QN(n90) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,96|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[1][6]  ( .D(datain[6]), .E(n659), .CK(clk), .QN(n91) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,97|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[1][5]  ( .D(datain[5]), .E(n659), .CK(clk), .QN(n92) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,98|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[1][4]  ( .D(datain[4]), .E(n659), .CK(clk), .QN(n93) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,99|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[1][3]  ( .D(datain[3]), .E(n659), .CK(clk), .QN(n94) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,100|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[1][2]  ( .D(datain[2]), .E(n659), .CK(clk), .QN(n95) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,101|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[1][1]  ( .D(datain[1]), .E(n659), .CK(clk), .QN(n96) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,102|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[1][0]  ( .D(datain[0]), .E(n659), .CK(clk), .QN(n97) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,103|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[6][7]  ( .D(datain[7]), .E(n1091), .CK(clk), .QN(n130) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,104|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[6][6]  ( .D(datain[6]), .E(n1091), .CK(clk), .QN(n131) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,105|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[6][5]  ( .D(datain[5]), .E(n1091), .CK(clk), .QN(n132) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,106|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[6][4]  ( .D(datain[4]), .E(n1091), .CK(clk), .QN(n133) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,107|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[6][3]  ( .D(datain[3]), .E(n1091), .CK(clk), .QN(n134) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,108|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[6][2]  ( .D(datain[2]), .E(n1091), .CK(clk), .QN(n135) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,109|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[6][1]  ( .D(datain[1]), .E(n1091), .CK(clk), .QN(n136) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,110|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[6][0]  ( .D(datain[0]), .E(n1091), .CK(clk), .QN(n137) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,111|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[7][7]  ( .D(datain[7]), .E(n1092), .CK(clk), .QN(n138) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,112|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[7][6]  ( .D(datain[6]), .E(n1092), .CK(clk), .QN(n139) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,113|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[7][5]  ( .D(datain[5]), .E(n1092), .CK(clk), .QN(n140) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,114|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[7][4]  ( .D(datain[4]), .E(n1092), .CK(clk), .QN(n141) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,115|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[7][3]  ( .D(datain[3]), .E(n1092), .CK(clk), .QN(n142) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,116|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[7][2]  ( .D(datain[2]), .E(n1092), .CK(clk), .QN(n143) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,117|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[7][1]  ( .D(datain[1]), .E(n1092), .CK(clk), .QN(n144) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,118|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[7][0]  ( .D(datain[0]), .E(n1092), .CK(clk), .QN(n145) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,119|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[10][7]  ( .D(datain[7]), .E(n1095), .CK(clk), .QN(n162) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,120|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[10][6]  ( .D(datain[6]), .E(n1095), .CK(clk), .QN(n163) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,121|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[10][5]  ( .D(datain[5]), .E(n1095), .CK(clk), .QN(n164) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,122|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[10][4]  ( .D(datain[4]), .E(n1095), .CK(clk), .QN(n165) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,123|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[10][3]  ( .D(datain[3]), .E(n1095), .CK(clk), .QN(n166) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,124|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[10][2]  ( .D(datain[2]), .E(n1095), .CK(clk), .QN(n167) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,125|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[10][1]  ( .D(datain[1]), .E(n1095), .CK(clk), .QN(n168) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,126|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[10][0]  ( .D(datain[0]), .E(n1095), .CK(clk), .QN(n169) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,127|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[12][7]  ( .D(datain[7]), .E(n1097), .CK(clk), .QN(n178) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,128|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[12][6]  ( .D(datain[6]), .E(n1097), .CK(clk), .QN(n179) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,129|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[12][5]  ( .D(datain[5]), .E(n1097), .CK(clk), .QN(n180) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,130|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[12][4]  ( .D(datain[4]), .E(n1097), .CK(clk), .QN(n181) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,131|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[12][3]  ( .D(datain[3]), .E(n1097), .CK(clk), .QN(n182) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,132|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[12][2]  ( .D(datain[2]), .E(n1097), .CK(clk), .QN(n183) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,133|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[12][1]  ( .D(datain[1]), .E(n1097), .CK(clk), .QN(n184) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,134|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[12][0]  ( .D(datain[0]), .E(n1097), .CK(clk), .QN(n185) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,135|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[13][7]  ( .D(datain[7]), .E(n1098), .CK(clk), .QN(n186) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,136|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[13][6]  ( .D(datain[6]), .E(n1098), .CK(clk), .QN(n187) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,137|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[13][5]  ( .D(datain[5]), .E(n1098), .CK(clk), .QN(n188) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,138|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[13][4]  ( .D(datain[4]), .E(n1098), .CK(clk), .QN(n189) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,139|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[13][3]  ( .D(datain[3]), .E(n1098), .CK(clk), .QN(n190) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,140|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[13][2]  ( .D(datain[2]), .E(n1098), .CK(clk), .QN(n191) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,141|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[13][1]  ( .D(datain[1]), .E(n1098), .CK(clk), .QN(n192) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,142|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[13][0]  ( .D(datain[0]), .E(n1098), .CK(clk), .QN(n193) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,143|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[18][7]  ( .D(datain[7]), .E(n1103), .CK(clk), .QN(n226) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,144|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[18][6]  ( .D(datain[6]), .E(n1103), .CK(clk), .QN(n227) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,145|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[18][5]  ( .D(datain[5]), .E(n1103), .CK(clk), .QN(n228) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,146|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[18][4]  ( .D(datain[4]), .E(n1103), .CK(clk), .QN(n229) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,147|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[18][3]  ( .D(datain[3]), .E(n1103), .CK(clk), .QN(n230) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,148|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[18][2]  ( .D(datain[2]), .E(n1103), .CK(clk), .QN(n231) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,149|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[18][1]  ( .D(datain[1]), .E(n1103), .CK(clk), .QN(n232) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,150|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[18][0]  ( .D(datain[0]), .E(n1103), .CK(clk), .QN(n233) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,151|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[23][7]  ( .D(datain[7]), .E(n1108), .CK(clk), .QN(n266) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,152|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[23][6]  ( .D(datain[6]), .E(n1108), .CK(clk), .QN(n267) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,153|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[23][5]  ( .D(datain[5]), .E(n1108), .CK(clk), .QN(n268) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,154|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[23][4]  ( .D(datain[4]), .E(n1108), .CK(clk), .QN(n269) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,155|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[23][3]  ( .D(datain[3]), .E(n1108), .CK(clk), .QN(n270) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,156|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[23][2]  ( .D(datain[2]), .E(n1108), .CK(clk), .QN(n271) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,157|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[23][1]  ( .D(datain[1]), .E(n1108), .CK(clk), .QN(n272) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,158|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[23][0]  ( .D(datain[0]), .E(n1108), .CK(clk), .QN(n273) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,159|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[26][7]  ( .D(datain[7]), .E(n1111), .CK(clk), .QN(n290) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,160|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[26][6]  ( .D(datain[6]), .E(n1111), .CK(clk), .QN(n291) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,161|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[26][5]  ( .D(datain[5]), .E(n1111), .CK(clk), .QN(n292) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,162|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[26][4]  ( .D(datain[4]), .E(n1111), .CK(clk), .QN(n293) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,163|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[26][3]  ( .D(datain[3]), .E(n1111), .CK(clk), .QN(n294) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,164|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[26][2]  ( .D(datain[2]), .E(n1111), .CK(clk), .QN(n295) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,165|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[26][1]  ( .D(datain[1]), .E(n1111), .CK(clk), .QN(n296) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,166|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[26][0]  ( .D(datain[0]), .E(n1111), .CK(clk), .QN(n297) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,167|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[31][7]  ( .D(datain[7]), .E(n1116), .CK(clk), .QN(n330) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,168|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[31][6]  ( .D(datain[6]), .E(n1116), .CK(clk), .QN(n331) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,169|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[31][5]  ( .D(datain[5]), .E(n1116), .CK(clk), .QN(n332) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,170|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[31][4]  ( .D(datain[4]), .E(n1116), .CK(clk), .QN(n333) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,171|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[31][3]  ( .D(datain[3]), .E(n1116), .CK(clk), .QN(n334) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,172|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[31][2]  ( .D(datain[2]), .E(n1116), .CK(clk), .QN(n335) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,173|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[31][1]  ( .D(datain[1]), .E(n1116), .CK(clk), .QN(n336) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,174|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[31][0]  ( .D(datain[0]), .E(n1116), .CK(clk), .QN(n337) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,175|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[32][7]  ( .D(datain[7]), .E(n1117), .CK(clk), .QN(n338) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,176|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[32][6]  ( .D(datain[6]), .E(n1117), .CK(clk), .QN(n339) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,177|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[32][5]  ( .D(datain[5]), .E(n1117), .CK(clk), .QN(n340) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,178|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[32][4]  ( .D(datain[4]), .E(n1117), .CK(clk), .QN(n341) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,179|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[32][3]  ( .D(datain[3]), .E(n1117), .CK(clk), .QN(n342) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,180|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[32][2]  ( .D(datain[2]), .E(n1117), .CK(clk), .QN(n343) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,181|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[32][1]  ( .D(datain[1]), .E(n1117), .CK(clk), .QN(n344) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,182|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[32][0]  ( .D(datain[0]), .E(n1117), .CK(clk), .QN(n345) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,183|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[34][7]  ( .D(datain[7]), .E(n1119), .CK(clk), .QN(n354) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,184|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[34][6]  ( .D(datain[6]), .E(n1119), .CK(clk), .QN(n355) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,185|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[34][5]  ( .D(datain[5]), .E(n1119), .CK(clk), .QN(n356) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,186|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[34][4]  ( .D(datain[4]), .E(n1119), .CK(clk), .QN(n357) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,187|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[34][3]  ( .D(datain[3]), .E(n1119), .CK(clk), .QN(n358) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,188|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[34][2]  ( .D(datain[2]), .E(n1119), .CK(clk), .QN(n359) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,189|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[34][1]  ( .D(datain[1]), .E(n1119), .CK(clk), .QN(n360) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,190|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[34][0]  ( .D(datain[0]), .E(n1119), .CK(clk), .QN(n361) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,191|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[4][7]  ( .D(datain[7]), .E(n1089), .CK(clk), .QN(n114) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,192|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[4][6]  ( .D(datain[6]), .E(n1089), .CK(clk), .QN(n115) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,193|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[4][5]  ( .D(datain[5]), .E(n1089), .CK(clk), .QN(n116) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,194|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[4][4]  ( .D(datain[4]), .E(n1089), .CK(clk), .QN(n117) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,195|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[4][3]  ( .D(datain[3]), .E(n1089), .CK(clk), .QN(n118) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,196|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[4][2]  ( .D(datain[2]), .E(n1089), .CK(clk), .QN(n119) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,197|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[4][1]  ( .D(datain[1]), .E(n1089), .CK(clk), .QN(n120) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,198|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[4][0]  ( .D(datain[0]), .E(n1089), .CK(clk), .QN(n121) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,199|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[17][7]  ( .D(datain[7]), .E(n1102), .CK(clk), .QN(n218) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,200|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[17][6]  ( .D(datain[6]), .E(n1102), .CK(clk), .QN(n219) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,201|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[17][5]  ( .D(datain[5]), .E(n1102), .CK(clk), .QN(n220) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,202|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[17][4]  ( .D(datain[4]), .E(n1102), .CK(clk), .QN(n221) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,203|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[17][3]  ( .D(datain[3]), .E(n1102), .CK(clk), .QN(n222) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,204|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[17][2]  ( .D(datain[2]), .E(n1102), .CK(clk), .QN(n223) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,205|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[17][1]  ( .D(datain[1]), .E(n1102), .CK(clk), .QN(n224) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,206|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[17][0]  ( .D(datain[0]), .E(n1102), .CK(clk), .QN(n225) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,207|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[25][7]  ( .D(datain[7]), .E(n1110), .CK(clk), .QN(n282) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,208|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[25][6]  ( .D(datain[6]), .E(n1110), .CK(clk), .QN(n283) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,209|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[25][5]  ( .D(datain[5]), .E(n1110), .CK(clk), .QN(n284) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,210|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[25][4]  ( .D(datain[4]), .E(n1110), .CK(clk), .QN(n285) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,211|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[25][3]  ( .D(datain[3]), .E(n1110), .CK(clk), .QN(n286) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,212|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[25][2]  ( .D(datain[2]), .E(n1110), .CK(clk), .QN(n287) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,213|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[25][1]  ( .D(datain[1]), .E(n1110), .CK(clk), .QN(n288) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,214|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[25][0]  ( .D(datain[0]), .E(n1110), .CK(clk), .QN(n289) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,215|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[30][7]  ( .D(datain[7]), .E(n1115), .CK(clk), .QN(n322) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,216|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[30][6]  ( .D(datain[6]), .E(n1115), .CK(clk), .QN(n323) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,217|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[30][5]  ( .D(datain[5]), .E(n1115), .CK(clk), .QN(n324) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,218|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[30][4]  ( .D(datain[4]), .E(n1115), .CK(clk), .QN(n325) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,219|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[30][3]  ( .D(datain[3]), .E(n1115), .CK(clk), .QN(n326) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,220|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[30][2]  ( .D(datain[2]), .E(n1115), .CK(clk), .QN(n327) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,221|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[30][1]  ( .D(datain[1]), .E(n1115), .CK(clk), .QN(n328) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,222|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[30][0]  ( .D(datain[0]), .E(n1115), .CK(clk), .QN(n329) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,223|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[5][7]  ( .D(datain[7]), .E(n1090), .CK(clk), .QN(n122) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,224|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[5][6]  ( .D(datain[6]), .E(n1090), .CK(clk), .QN(n123) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,225|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[5][5]  ( .D(datain[5]), .E(n1090), .CK(clk), .QN(n124) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,226|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[5][4]  ( .D(datain[4]), .E(n1090), .CK(clk), .QN(n125) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,227|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[5][3]  ( .D(datain[3]), .E(n1090), .CK(clk), .QN(n126) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,228|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[5][2]  ( .D(datain[2]), .E(n1090), .CK(clk), .QN(n127) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,229|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[5][1]  ( .D(datain[1]), .E(n1090), .CK(clk), .QN(n128) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,230|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[5][0]  ( .D(datain[0]), .E(n1090), .CK(clk), .QN(n129) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,231|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[24][7]  ( .D(datain[7]), .E(n1109), .CK(clk), .QN(n274) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,232|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[24][6]  ( .D(datain[6]), .E(n1109), .CK(clk), .QN(n275) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,233|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[24][5]  ( .D(datain[5]), .E(n1109), .CK(clk), .QN(n276) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,234|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[24][4]  ( .D(datain[4]), .E(n1109), .CK(clk), .QN(n277) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,235|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[24][3]  ( .D(datain[3]), .E(n1109), .CK(clk), .QN(n278) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,236|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[24][2]  ( .D(datain[2]), .E(n1109), .CK(clk), .QN(n279) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,237|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[24][1]  ( .D(datain[1]), .E(n1109), .CK(clk), .QN(n280) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,238|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[24][0]  ( .D(datain[0]), .E(n1109), .CK(clk), .QN(n281) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,239|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[27][7]  ( .D(datain[7]), .E(n1112), .CK(clk), .QN(n298) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,240|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[27][6]  ( .D(datain[6]), .E(n1112), .CK(clk), .QN(n299) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,241|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[27][5]  ( .D(datain[5]), .E(n1112), .CK(clk), .QN(n300) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,242|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[27][4]  ( .D(datain[4]), .E(n1112), .CK(clk), .QN(n301) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,243|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[27][3]  ( .D(datain[3]), .E(n1112), .CK(clk), .QN(n302) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,244|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[27][2]  ( .D(datain[2]), .E(n1112), .CK(clk), .QN(n303) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,245|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[27][1]  ( .D(datain[1]), .E(n1112), .CK(clk), .QN(n304) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,246|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[27][0]  ( .D(datain[0]), .E(n1112), .CK(clk), .QN(n305) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,247|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[29][7]  ( .D(datain[7]), .E(n1114), .CK(clk), .QN(n314) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,248|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[29][6]  ( .D(datain[6]), .E(n1114), .CK(clk), .QN(n315) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,249|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[29][5]  ( .D(datain[5]), .E(n1114), .CK(clk), .QN(n316) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,250|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[29][4]  ( .D(datain[4]), .E(n1114), .CK(clk), .QN(n317) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,251|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[29][3]  ( .D(datain[3]), .E(n1114), .CK(clk), .QN(n318) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,252|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[29][2]  ( .D(datain[2]), .E(n1114), .CK(clk), .QN(n319) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,253|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[29][1]  ( .D(datain[1]), .E(n1114), .CK(clk), .QN(n320) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,254|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[29][0]  ( .D(datain[0]), .E(n1114), .CK(clk), .QN(n321) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,255|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[3][7]  ( .D(datain[7]), .E(n656), .CK(clk), .QN(n106) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,256|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[3][6]  ( .D(datain[6]), .E(n656), .CK(clk), .QN(n107) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,257|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[3][5]  ( .D(datain[5]), .E(n656), .CK(clk), .QN(n108) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,258|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[3][4]  ( .D(datain[4]), .E(n656), .CK(clk), .QN(n109) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,259|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[3][3]  ( .D(datain[3]), .E(n656), .CK(clk), .QN(n110) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,260|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[3][2]  ( .D(datain[2]), .E(n656), .CK(clk), .QN(n111) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,261|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[3][1]  ( .D(datain[1]), .E(n656), .CK(clk), .QN(n112) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,262|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[3][0]  ( .D(datain[0]), .E(n656), .CK(clk), .QN(n113) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,263|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[16][7]  ( .D(datain[7]), .E(n1101), .CK(clk), .QN(n210) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,264|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[16][6]  ( .D(datain[6]), .E(n1101), .CK(clk), .QN(n211) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,265|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[16][5]  ( .D(datain[5]), .E(n1101), .CK(clk), .QN(n212) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,266|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[16][4]  ( .D(datain[4]), .E(n1101), .CK(clk), .QN(n213) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,267|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[16][3]  ( .D(datain[3]), .E(n1101), .CK(clk), .QN(n214) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,268|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[16][2]  ( .D(datain[2]), .E(n1101), .CK(clk), .QN(n215) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,269|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[16][1]  ( .D(datain[1]), .E(n1101), .CK(clk), .QN(n216) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,270|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[16][0]  ( .D(datain[0]), .E(n1101), .CK(clk), .QN(n217) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,271|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[22][7]  ( .D(datain[7]), .E(n1107), .CK(clk), .QN(n258) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,272|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[22][6]  ( .D(datain[6]), .E(n1107), .CK(clk), .QN(n259) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,273|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[22][5]  ( .D(datain[5]), .E(n1107), .CK(clk), .QN(n260) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,274|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[22][4]  ( .D(datain[4]), .E(n1107), .CK(clk), .QN(n261) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,275|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[22][3]  ( .D(datain[3]), .E(n1107), .CK(clk), .QN(n262) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,276|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[22][2]  ( .D(datain[2]), .E(n1107), .CK(clk), .QN(n263) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,277|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[22][1]  ( .D(datain[1]), .E(n1107), .CK(clk), .QN(n264) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,278|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[22][0]  ( .D(datain[0]), .E(n1107), .CK(clk), .QN(n265) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,279|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[28][7]  ( .D(datain[7]), .E(n1113), .CK(clk), .QN(n306) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,280|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[28][6]  ( .D(datain[6]), .E(n1113), .CK(clk), .QN(n307) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,281|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[28][5]  ( .D(datain[5]), .E(n1113), .CK(clk), .QN(n308) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,282|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[28][4]  ( .D(datain[4]), .E(n1113), .CK(clk), .QN(n309) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,283|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[28][3]  ( .D(datain[3]), .E(n1113), .CK(clk), .QN(n310) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,284|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[28][2]  ( .D(datain[2]), .E(n1113), .CK(clk), .QN(n311) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,285|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[28][1]  ( .D(datain[1]), .E(n1113), .CK(clk), .QN(n312) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,286|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[28][0]  ( .D(datain[0]), .E(n1113), .CK(clk), .QN(n313) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,287|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[0][7]  ( .D(datain[7]), .E(n660), .CK(clk), .QN(n82) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,288|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[0][6]  ( .D(datain[6]), .E(n660), .CK(clk), .QN(n83) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,289|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[0][5]  ( .D(datain[5]), .E(n660), .CK(clk), .QN(n84) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,290|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[0][4]  ( .D(datain[4]), .E(n660), .CK(clk), .QN(n85) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,291|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[0][3]  ( .D(datain[3]), .E(n660), .CK(clk), .QN(n86) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,292|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[0][2]  ( .D(datain[2]), .E(n660), .CK(clk), .QN(n87) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,293|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[0][1]  ( .D(datain[1]), .E(n660), .CK(clk), .QN(n88) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,294|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[0][0]  ( .D(datain[0]), .E(n660), .CK(clk), .QN(n89) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,295|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[2][7]  ( .D(datain[7]), .E(n658), .CK(clk), .QN(n98) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,296|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[2][6]  ( .D(datain[6]), .E(n658), .CK(clk), .QN(n99) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,297|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[2][5]  ( .D(datain[5]), .E(n658), .CK(clk), .QN(n100) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,298|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[2][4]  ( .D(datain[4]), .E(n658), .CK(clk), .QN(n101) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,299|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[2][3]  ( .D(datain[3]), .E(n658), .CK(clk), .QN(n102) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,300|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[2][2]  ( .D(datain[2]), .E(n658), .CK(clk), .QN(n103) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,301|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[2][1]  ( .D(datain[1]), .E(n658), .CK(clk), .QN(n104) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,302|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[2][0]  ( .D(datain[0]), .E(n658), .CK(clk), .QN(n105) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,303|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[8][7]  ( .D(datain[7]), .E(n1093), .CK(clk), .QN(n146) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,304|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[8][6]  ( .D(datain[6]), .E(n1093), .CK(clk), .QN(n147) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,305|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[8][5]  ( .D(datain[5]), .E(n1093), .CK(clk), .QN(n148) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,306|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[8][4]  ( .D(datain[4]), .E(n1093), .CK(clk), .QN(n149) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,307|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[8][3]  ( .D(datain[3]), .E(n1093), .CK(clk), .QN(n150) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,308|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[8][2]  ( .D(datain[2]), .E(n1093), .CK(clk), .QN(n151) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,309|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[8][1]  ( .D(datain[1]), .E(n1093), .CK(clk), .QN(n152) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,310|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[8][0]  ( .D(datain[0]), .E(n1093), .CK(clk), .QN(n153) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,311|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[9][7]  ( .D(datain[7]), .E(n1094), .CK(clk), .QN(n154) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,312|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[9][6]  ( .D(datain[6]), .E(n1094), .CK(clk), .QN(n155) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,313|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[9][5]  ( .D(datain[5]), .E(n1094), .CK(clk), .QN(n156) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,314|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[9][4]  ( .D(datain[4]), .E(n1094), .CK(clk), .QN(n157) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,315|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[9][3]  ( .D(datain[3]), .E(n1094), .CK(clk), .QN(n158) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,316|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[9][2]  ( .D(datain[2]), .E(n1094), .CK(clk), .QN(n159) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,317|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[9][1]  ( .D(datain[1]), .E(n1094), .CK(clk), .QN(n160) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,318|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[9][0]  ( .D(datain[0]), .E(n1094), .CK(clk), .QN(n161) );
+                       |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,319|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[11][7]  ( .D(datain[7]), .E(n1096), .CK(clk), .QN(n170) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,320|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[11][6]  ( .D(datain[6]), .E(n1096), .CK(clk), .QN(n171) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,321|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[11][5]  ( .D(datain[5]), .E(n1096), .CK(clk), .QN(n172) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,322|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[11][4]  ( .D(datain[4]), .E(n1096), .CK(clk), .QN(n173) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,323|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[11][3]  ( .D(datain[3]), .E(n1096), .CK(clk), .QN(n174) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,324|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[11][2]  ( .D(datain[2]), .E(n1096), .CK(clk), .QN(n175) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,325|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[11][1]  ( .D(datain[1]), .E(n1096), .CK(clk), .QN(n176) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,326|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[11][0]  ( .D(datain[0]), .E(n1096), .CK(clk), .QN(n177) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,327|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[14][7]  ( .D(datain[7]), .E(n1099), .CK(clk), .QN(n194) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,328|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[14][6]  ( .D(datain[6]), .E(n1099), .CK(clk), .QN(n195) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,329|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[14][5]  ( .D(datain[5]), .E(n1099), .CK(clk), .QN(n196) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,330|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[14][4]  ( .D(datain[4]), .E(n1099), .CK(clk), .QN(n197) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,331|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[14][3]  ( .D(datain[3]), .E(n1099), .CK(clk), .QN(n198) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,332|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[14][2]  ( .D(datain[2]), .E(n1099), .CK(clk), .QN(n199) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,333|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[14][1]  ( .D(datain[1]), .E(n1099), .CK(clk), .QN(n200) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,334|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[14][0]  ( .D(datain[0]), .E(n1099), .CK(clk), .QN(n201) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,335|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[15][7]  ( .D(datain[7]), .E(n1100), .CK(clk), .QN(n202) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,336|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[15][6]  ( .D(datain[6]), .E(n1100), .CK(clk), .QN(n203) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,337|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[15][5]  ( .D(datain[5]), .E(n1100), .CK(clk), .QN(n204) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,338|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[15][4]  ( .D(datain[4]), .E(n1100), .CK(clk), .QN(n205) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,339|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[15][3]  ( .D(datain[3]), .E(n1100), .CK(clk), .QN(n206) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,340|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[15][2]  ( .D(datain[2]), .E(n1100), .CK(clk), .QN(n207) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,341|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[15][1]  ( .D(datain[1]), .E(n1100), .CK(clk), .QN(n208) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,342|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[15][0]  ( .D(datain[0]), .E(n1100), .CK(clk), .QN(n209) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,343|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[19][7]  ( .D(datain[7]), .E(n1104), .CK(clk), .QN(n234) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,344|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[19][6]  ( .D(datain[6]), .E(n1104), .CK(clk), .QN(n235) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,345|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[19][5]  ( .D(datain[5]), .E(n1104), .CK(clk), .QN(n236) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,346|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[19][4]  ( .D(datain[4]), .E(n1104), .CK(clk), .QN(n237) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,347|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[19][3]  ( .D(datain[3]), .E(n1104), .CK(clk), .QN(n238) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,348|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[19][2]  ( .D(datain[2]), .E(n1104), .CK(clk), .QN(n239) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,349|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[19][1]  ( .D(datain[1]), .E(n1104), .CK(clk), .QN(n240) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,350|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[19][0]  ( .D(datain[0]), .E(n1104), .CK(clk), .QN(n241) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,351|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[20][7]  ( .D(datain[7]), .E(n1105), .CK(clk), .QN(n242) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,352|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[20][6]  ( .D(datain[6]), .E(n1105), .CK(clk), .QN(n243) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,353|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[20][5]  ( .D(datain[5]), .E(n1105), .CK(clk), .QN(n244) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,354|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[20][4]  ( .D(datain[4]), .E(n1105), .CK(clk), .QN(n245) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,355|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[20][3]  ( .D(datain[3]), .E(n1105), .CK(clk), .QN(n246) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,356|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[20][2]  ( .D(datain[2]), .E(n1105), .CK(clk), .QN(n247) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,357|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[20][1]  ( .D(datain[1]), .E(n1105), .CK(clk), .QN(n248) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,358|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[20][0]  ( .D(datain[0]), .E(n1105), .CK(clk), .QN(n249) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,359|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[21][7]  ( .D(datain[7]), .E(n1106), .CK(clk), .QN(n250) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,360|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[21][6]  ( .D(datain[6]), .E(n1106), .CK(clk), .QN(n251) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,361|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[21][5]  ( .D(datain[5]), .E(n1106), .CK(clk), .QN(n252) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,362|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[21][4]  ( .D(datain[4]), .E(n1106), .CK(clk), .QN(n253) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,363|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[21][3]  ( .D(datain[3]), .E(n1106), .CK(clk), .QN(n254) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,364|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[21][2]  ( .D(datain[2]), .E(n1106), .CK(clk), .QN(n255) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,365|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[21][1]  ( .D(datain[1]), .E(n1106), .CK(clk), .QN(n256) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,366|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[21][0]  ( .D(datain[0]), .E(n1106), .CK(clk), .QN(n257) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,367|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[33][7]  ( .D(datain[7]), .E(n1118), .CK(clk), .QN(n346) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,368|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[33][6]  ( .D(datain[6]), .E(n1118), .CK(clk), .QN(n347) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,369|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[33][5]  ( .D(datain[5]), .E(n1118), .CK(clk), .QN(n348) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,370|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[33][4]  ( .D(datain[4]), .E(n1118), .CK(clk), .QN(n349) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,371|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[33][3]  ( .D(datain[3]), .E(n1118), .CK(clk), .QN(n350) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,372|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[33][2]  ( .D(datain[2]), .E(n1118), .CK(clk), .QN(n351) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,373|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[33][1]  ( .D(datain[1]), .E(n1118), .CK(clk), .QN(n352) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,374|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[33][0]  ( .D(datain[0]), .E(n1118), .CK(clk), .QN(n353) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,375|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[35][7]  ( .D(datain[7]), .E(n1120), .CK(clk), .QN(n362) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,376|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[35][6]  ( .D(datain[6]), .E(n1120), .CK(clk), .QN(n363) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,377|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[35][5]  ( .D(datain[5]), .E(n1120), .CK(clk), .QN(n364) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,378|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[35][4]  ( .D(datain[4]), .E(n1120), .CK(clk), .QN(n365) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,379|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[35][3]  ( .D(datain[3]), .E(n1120), .CK(clk), .QN(n366) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,380|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[35][2]  ( .D(datain[2]), .E(n1120), .CK(clk), .QN(n367) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,381|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[35][1]  ( .D(datain[1]), .E(n1120), .CK(clk), .QN(n368) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,382|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \Mem_reg[35][0]  ( .D(datain[0]), .E(n1120), .CK(clk), .QN(n369) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,383|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  DFFRX1 \dataout_reg[0]  ( .D(n671), .CK(clk), .RN(n1088), .QN(n730) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,384|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \dataout_reg[1]  ( .D(n672), .CK(clk), .RN(n1088), .QN(n731) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,385|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \dataout_reg[2]  ( .D(n673), .CK(clk), .RN(n1088), .QN(n732) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,386|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \dataout_reg[3]  ( .D(n674), .CK(clk), .RN(n1088), .QN(n733) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,387|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \dataout_reg[4]  ( .D(n675), .CK(clk), .RN(n1088), .QN(n734) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,388|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \dataout_reg[5]  ( .D(n676), .CK(clk), .RN(n1088), .QN(n735) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,389|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \dataout_reg[6]  ( .D(n677), .CK(clk), .RN(n1088), .QN(n736) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,390|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \dataout_reg[7]  ( .D(n678), .CK(clk), .RN(n1088), .QN(n737) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,391|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.test:v <0x356043f7>
+			streams:  10, words: 13873
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                  789      60
+		UDPs:                     346       3
+		Primitives:              2070       8
+		Timing outputs:           803      58
+		Registers:                324      23
+		Scalar wires:            1116       -
+		Expanded wires:            11       2
+		Always blocks:              2       2
+		Initial blocks:             7       7
+		Pseudo assignments:         1       1
+		Timing checks:           3060     105
+		Delayed tcheck signals:   924      66
+		Simulation timescale:     1ps
+	Writing initial simulation snapshot: worklib.test:v
+Loading snapshot worklib.test:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+ncsim: *W,DVEXACC: some objects excluded from $dumpvars due to access restrictions, use +access+r on command line for access to all objects.
+            File: ./testfixture.v, line = 58, pos = 8
+           Scope: test
+            Time: 0 FS + 0
+
+---------------------------------------------
+
+All data have been generated successfully!
+
+-------------------PASS-------------------
+
+---------------------------------------------
+
+Simulation complete via $finish(1) at time 6636 NS + 0
+./testfixture.v:131       $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Aug 06, 2022 at 18:39:17 CST  (total: 00:00:01)

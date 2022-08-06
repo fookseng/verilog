@@ -1,0 +1,2 @@
+s1(06Aug2022:18:38:56):  ncverilog testfixture.v lcd_ctrl_syn.v -v tsmc13_neg.v +define+SDF 
+s2(06Aug2022:18:39:16):  ncverilog testfixture.v lcd_ctrl_syn.v -v tsmc13_neg.v +define+SDF 
