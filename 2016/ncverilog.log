@@ -1,0 +1,712 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Aug 06, 2022 at 16:17:42 CST
+ncverilog
+	testfixture.v
+	LBP_syn.v
+	-v
+	tsmc13_neg.v
+	+define+SDF
+Recompiling... reason: file './testfixture.v' is newer than expected.
+	expected: Sat Aug  6 16:17:28 2022
+	actual:   Sat Aug  6 16:17:42 2022
+file: testfixture.v
+	module worklib.testfixture:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+		Caching library 'tsmc13_neg' ....... Done
+	Elaborating the design hierarchy:
+  EDFFX1 \gc_reg[7]  ( .D(gray_data[7]), .E(n186), .CK(clk), .Q(gc[7]) );
+                   |
+ncelab: *W,CUVWSP (./LBP_syn.v,146|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+  EDFFX1 \gc_reg[6]  ( .D(gray_data[6]), .E(n186), .CK(clk), .QN(n482) );
+                   |
+ncelab: *W,CUVWSP (./LBP_syn.v,147|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \gc_reg[0]  ( .D(gray_data[0]), .E(n186), .CK(clk), .QN(n481) );
+                   |
+ncelab: *W,CUVWSP (./LBP_syn.v,155|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  EDFFX1 \gc_reg[4]  ( .D(gray_data[4]), .E(n186), .CK(clk), .Q(gc[4]) );
+                   |
+ncelab: *W,CUVWSP (./LBP_syn.v,156|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+  EDFFX1 \gc_reg[2]  ( .D(gray_data[2]), .E(n186), .CK(clk), .Q(gc[2]) );
+                   |
+ncelab: *W,CUVWSP (./LBP_syn.v,157|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+  EDFFX1 \gc_reg[1]  ( .D(gray_data[1]), .E(n186), .CK(clk), .Q(gc[1]) );
+                   |
+ncelab: *W,CUVWSP (./LBP_syn.v,158|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+  EDFFX1 \gc_reg[3]  ( .D(gray_data[3]), .E(n186), .CK(clk), .Q(gc[3]) );
+                   |
+ncelab: *W,CUVWSP (./LBP_syn.v,166|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+  EDFFX1 \gc_reg[5]  ( .D(gray_data[5]), .E(n186), .CK(clk), .Q(gc[5]) );
+                   |
+ncelab: *W,CUVWSP (./LBP_syn.v,167|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+	Reading SDF file from location "./LBP_syn.sdf"
+	Annotating SDF timing data:
+		Compiled SDF file:     LBP_syn.sdf.X
+		Log file:              
+		Backannotation scope:  testfixture.LBP
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U739 of module XOR2X1 <./LBP_syn.sdf, line 1562>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U739 of module XOR2X1 <./LBP_syn.sdf, line 1563>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U739 of module XOR2X1 <./LBP_syn.sdf, line 1566>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U739 of module XOR2X1 <./LBP_syn.sdf, line 1567>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U737 of module XOR2X1 <./LBP_syn.sdf, line 1588>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U737 of module XOR2X1 <./LBP_syn.sdf, line 1589>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U737 of module XOR2X1 <./LBP_syn.sdf, line 1592>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U737 of module XOR2X1 <./LBP_syn.sdf, line 1593>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U735 of module XOR2X1 <./LBP_syn.sdf, line 1614>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U735 of module XOR2X1 <./LBP_syn.sdf, line 1615>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U735 of module XOR2X1 <./LBP_syn.sdf, line 1618>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U735 of module XOR2X1 <./LBP_syn.sdf, line 1619>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U733 of module XOR2X1 <./LBP_syn.sdf, line 1640>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U733 of module XOR2X1 <./LBP_syn.sdf, line 1641>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U733 of module XOR2X1 <./LBP_syn.sdf, line 1644>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U733 of module XOR2X1 <./LBP_syn.sdf, line 1645>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U731 of module XOR2X1 <./LBP_syn.sdf, line 1666>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U731 of module XOR2X1 <./LBP_syn.sdf, line 1667>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U731 of module XOR2X1 <./LBP_syn.sdf, line 1670>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U731 of module XOR2X1 <./LBP_syn.sdf, line 1671>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U729 of module XOR2X1 <./LBP_syn.sdf, line 1692>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U729 of module XOR2X1 <./LBP_syn.sdf, line 1693>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U729 of module XOR2X1 <./LBP_syn.sdf, line 1696>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U729 of module XOR2X1 <./LBP_syn.sdf, line 1697>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U727 of module XOR2X1 <./LBP_syn.sdf, line 1718>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U727 of module XOR2X1 <./LBP_syn.sdf, line 1719>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U727 of module XOR2X1 <./LBP_syn.sdf, line 1722>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U727 of module XOR2X1 <./LBP_syn.sdf, line 1723>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U725 of module XOR2X1 <./LBP_syn.sdf, line 1744>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U725 of module XOR2X1 <./LBP_syn.sdf, line 1745>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U725 of module XOR2X1 <./LBP_syn.sdf, line 1748>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U725 of module XOR2X1 <./LBP_syn.sdf, line 1749>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U723 of module XOR2X1 <./LBP_syn.sdf, line 1770>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U723 of module XOR2X1 <./LBP_syn.sdf, line 1771>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U723 of module XOR2X1 <./LBP_syn.sdf, line 1774>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U723 of module XOR2X1 <./LBP_syn.sdf, line 1775>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U721 of module XOR2X1 <./LBP_syn.sdf, line 1796>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U721 of module XOR2X1 <./LBP_syn.sdf, line 1797>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U721 of module XOR2X1 <./LBP_syn.sdf, line 1800>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U721 of module XOR2X1 <./LBP_syn.sdf, line 1801>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U719 of module XOR2X1 <./LBP_syn.sdf, line 1822>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U719 of module XOR2X1 <./LBP_syn.sdf, line 1823>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U719 of module XOR2X1 <./LBP_syn.sdf, line 1826>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U719 of module XOR2X1 <./LBP_syn.sdf, line 1827>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U717 of module XOR2X1 <./LBP_syn.sdf, line 1848>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U717 of module XOR2X1 <./LBP_syn.sdf, line 1849>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U717 of module XOR2X1 <./LBP_syn.sdf, line 1852>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U717 of module XOR2X1 <./LBP_syn.sdf, line 1853>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U715 of module XOR2X1 <./LBP_syn.sdf, line 1874>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U715 of module XOR2X1 <./LBP_syn.sdf, line 1875>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U715 of module XOR2X1 <./LBP_syn.sdf, line 1878>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U715 of module XOR2X1 <./LBP_syn.sdf, line 1879>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U713 of module XOR2X1 <./LBP_syn.sdf, line 1900>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U713 of module XOR2X1 <./LBP_syn.sdf, line 1901>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U713 of module XOR2X1 <./LBP_syn.sdf, line 1904>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U713 of module XOR2X1 <./LBP_syn.sdf, line 1905>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U711 of module XOR2X1 <./LBP_syn.sdf, line 1926>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U711 of module XOR2X1 <./LBP_syn.sdf, line 1927>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U711 of module XOR2X1 <./LBP_syn.sdf, line 1930>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U711 of module XOR2X1 <./LBP_syn.sdf, line 1931>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U709 of module XOR2X1 <./LBP_syn.sdf, line 1952>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U709 of module XOR2X1 <./LBP_syn.sdf, line 1953>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U709 of module XOR2X1 <./LBP_syn.sdf, line 1956>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U709 of module XOR2X1 <./LBP_syn.sdf, line 1957>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U707 of module XNOR2X1 <./LBP_syn.sdf, line 1978>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U707 of module XNOR2X1 <./LBP_syn.sdf, line 1979>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U707 of module XNOR2X1 <./LBP_syn.sdf, line 1982>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U707 of module XNOR2X1 <./LBP_syn.sdf, line 1983>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U705 of module XNOR2X1 <./LBP_syn.sdf, line 2004>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U705 of module XNOR2X1 <./LBP_syn.sdf, line 2005>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U705 of module XNOR2X1 <./LBP_syn.sdf, line 2008>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U705 of module XNOR2X1 <./LBP_syn.sdf, line 2009>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U703 of module XNOR2X1 <./LBP_syn.sdf, line 2030>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U703 of module XNOR2X1 <./LBP_syn.sdf, line 2031>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U703 of module XNOR2X1 <./LBP_syn.sdf, line 2034>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U703 of module XNOR2X1 <./LBP_syn.sdf, line 2035>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U701 of module XNOR2X1 <./LBP_syn.sdf, line 2056>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U701 of module XNOR2X1 <./LBP_syn.sdf, line 2057>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U701 of module XNOR2X1 <./LBP_syn.sdf, line 2060>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U701 of module XNOR2X1 <./LBP_syn.sdf, line 2061>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U699 of module XNOR2X1 <./LBP_syn.sdf, line 2082>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U699 of module XNOR2X1 <./LBP_syn.sdf, line 2083>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U699 of module XNOR2X1 <./LBP_syn.sdf, line 2086>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U699 of module XNOR2X1 <./LBP_syn.sdf, line 2087>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U697 of module XNOR2X1 <./LBP_syn.sdf, line 2108>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U697 of module XNOR2X1 <./LBP_syn.sdf, line 2109>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U697 of module XNOR2X1 <./LBP_syn.sdf, line 2112>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U697 of module XNOR2X1 <./LBP_syn.sdf, line 2113>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U695 of module XNOR2X1 <./LBP_syn.sdf, line 2134>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U695 of module XNOR2X1 <./LBP_syn.sdf, line 2135>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U695 of module XNOR2X1 <./LBP_syn.sdf, line 2138>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U695 of module XNOR2X1 <./LBP_syn.sdf, line 2139>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U693 of module XNOR2X1 <./LBP_syn.sdf, line 2160>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U693 of module XNOR2X1 <./LBP_syn.sdf, line 2161>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U693 of module XNOR2X1 <./LBP_syn.sdf, line 2164>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U693 of module XNOR2X1 <./LBP_syn.sdf, line 2165>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U691 of module XNOR2X1 <./LBP_syn.sdf, line 2186>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U691 of module XNOR2X1 <./LBP_syn.sdf, line 2187>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U691 of module XNOR2X1 <./LBP_syn.sdf, line 2190>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U691 of module XNOR2X1 <./LBP_syn.sdf, line 2191>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U689 of module XNOR2X1 <./LBP_syn.sdf, line 2212>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U689 of module XNOR2X1 <./LBP_syn.sdf, line 2213>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U689 of module XNOR2X1 <./LBP_syn.sdf, line 2216>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U689 of module XNOR2X1 <./LBP_syn.sdf, line 2217>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U687 of module XNOR2X1 <./LBP_syn.sdf, line 2238>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U687 of module XNOR2X1 <./LBP_syn.sdf, line 2239>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U687 of module XNOR2X1 <./LBP_syn.sdf, line 2242>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U687 of module XNOR2X1 <./LBP_syn.sdf, line 2243>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U685 of module XNOR2X1 <./LBP_syn.sdf, line 2264>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U685 of module XNOR2X1 <./LBP_syn.sdf, line 2265>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U685 of module XNOR2X1 <./LBP_syn.sdf, line 2268>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U685 of module XNOR2X1 <./LBP_syn.sdf, line 2269>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U683 of module XNOR2X1 <./LBP_syn.sdf, line 2290>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U683 of module XNOR2X1 <./LBP_syn.sdf, line 2291>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U683 of module XNOR2X1 <./LBP_syn.sdf, line 2294>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U683 of module XNOR2X1 <./LBP_syn.sdf, line 2295>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U681 of module XNOR2X1 <./LBP_syn.sdf, line 2316>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U681 of module XNOR2X1 <./LBP_syn.sdf, line 2317>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U681 of module XNOR2X1 <./LBP_syn.sdf, line 2320>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U681 of module XNOR2X1 <./LBP_syn.sdf, line 2321>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U679 of module XNOR2X1 <./LBP_syn.sdf, line 2342>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U679 of module XNOR2X1 <./LBP_syn.sdf, line 2343>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U679 of module XNOR2X1 <./LBP_syn.sdf, line 2346>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U679 of module XNOR2X1 <./LBP_syn.sdf, line 2347>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U677 of module XNOR2X1 <./LBP_syn.sdf, line 2368>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U677 of module XNOR2X1 <./LBP_syn.sdf, line 2369>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U677 of module XNOR2X1 <./LBP_syn.sdf, line 2372>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U677 of module XNOR2X1 <./LBP_syn.sdf, line 2373>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U675 of module XOR2X1 <./LBP_syn.sdf, line 2394>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U675 of module XOR2X1 <./LBP_syn.sdf, line 2395>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U675 of module XOR2X1 <./LBP_syn.sdf, line 2398>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U675 of module XOR2X1 <./LBP_syn.sdf, line 2399>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U673 of module XOR2X1 <./LBP_syn.sdf, line 2420>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U673 of module XOR2X1 <./LBP_syn.sdf, line 2421>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U673 of module XOR2X1 <./LBP_syn.sdf, line 2424>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U673 of module XOR2X1 <./LBP_syn.sdf, line 2425>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U671 of module XOR2X1 <./LBP_syn.sdf, line 2446>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U671 of module XOR2X1 <./LBP_syn.sdf, line 2447>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U671 of module XOR2X1 <./LBP_syn.sdf, line 2450>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U671 of module XOR2X1 <./LBP_syn.sdf, line 2451>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U669 of module XOR2X1 <./LBP_syn.sdf, line 2472>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U669 of module XOR2X1 <./LBP_syn.sdf, line 2473>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U669 of module XOR2X1 <./LBP_syn.sdf, line 2476>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U669 of module XOR2X1 <./LBP_syn.sdf, line 2477>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U667 of module XOR2X1 <./LBP_syn.sdf, line 2498>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U667 of module XOR2X1 <./LBP_syn.sdf, line 2499>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U667 of module XOR2X1 <./LBP_syn.sdf, line 2502>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U667 of module XOR2X1 <./LBP_syn.sdf, line 2503>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U665 of module XOR2X1 <./LBP_syn.sdf, line 2524>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U665 of module XOR2X1 <./LBP_syn.sdf, line 2525>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U665 of module XOR2X1 <./LBP_syn.sdf, line 2528>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U665 of module XOR2X1 <./LBP_syn.sdf, line 2529>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U663 of module XNOR2X1 <./LBP_syn.sdf, line 2550>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U663 of module XNOR2X1 <./LBP_syn.sdf, line 2551>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U663 of module XNOR2X1 <./LBP_syn.sdf, line 2554>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U663 of module XNOR2X1 <./LBP_syn.sdf, line 2555>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U661 of module XNOR2X1 <./LBP_syn.sdf, line 2576>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U661 of module XNOR2X1 <./LBP_syn.sdf, line 2577>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U661 of module XNOR2X1 <./LBP_syn.sdf, line 2580>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U661 of module XNOR2X1 <./LBP_syn.sdf, line 2581>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U659 of module XNOR2X1 <./LBP_syn.sdf, line 2602>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U659 of module XNOR2X1 <./LBP_syn.sdf, line 2603>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U659 of module XNOR2X1 <./LBP_syn.sdf, line 2606>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U659 of module XNOR2X1 <./LBP_syn.sdf, line 2607>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U657 of module XNOR2X1 <./LBP_syn.sdf, line 2628>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U657 of module XNOR2X1 <./LBP_syn.sdf, line 2629>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U657 of module XNOR2X1 <./LBP_syn.sdf, line 2632>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U657 of module XNOR2X1 <./LBP_syn.sdf, line 2633>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U655 of module XNOR2X1 <./LBP_syn.sdf, line 2654>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U655 of module XNOR2X1 <./LBP_syn.sdf, line 2655>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U655 of module XNOR2X1 <./LBP_syn.sdf, line 2658>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U655 of module XNOR2X1 <./LBP_syn.sdf, line 2659>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U653 of module XNOR2X1 <./LBP_syn.sdf, line 2680>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U653 of module XNOR2X1 <./LBP_syn.sdf, line 2681>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U653 of module XNOR2X1 <./LBP_syn.sdf, line 2684>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U653 of module XNOR2X1 <./LBP_syn.sdf, line 2685>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U651 of module XOR2X1 <./LBP_syn.sdf, line 2706>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U651 of module XOR2X1 <./LBP_syn.sdf, line 2707>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U651 of module XOR2X1 <./LBP_syn.sdf, line 2710>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U651 of module XOR2X1 <./LBP_syn.sdf, line 2711>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U649 of module XNOR2X1 <./LBP_syn.sdf, line 2732>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U649 of module XNOR2X1 <./LBP_syn.sdf, line 2733>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U649 of module XNOR2X1 <./LBP_syn.sdf, line 2736>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U649 of module XNOR2X1 <./LBP_syn.sdf, line 2737>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U647 of module XNOR2X1 <./LBP_syn.sdf, line 2758>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U647 of module XNOR2X1 <./LBP_syn.sdf, line 2759>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U647 of module XNOR2X1 <./LBP_syn.sdf, line 2762>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U647 of module XNOR2X1 <./LBP_syn.sdf, line 2763>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U645 of module XNOR2X1 <./LBP_syn.sdf, line 2784>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U645 of module XNOR2X1 <./LBP_syn.sdf, line 2785>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U645 of module XNOR2X1 <./LBP_syn.sdf, line 2788>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U645 of module XNOR2X1 <./LBP_syn.sdf, line 2789>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U643 of module XNOR2X1 <./LBP_syn.sdf, line 2810>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U643 of module XNOR2X1 <./LBP_syn.sdf, line 2811>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U643 of module XNOR2X1 <./LBP_syn.sdf, line 2814>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U643 of module XNOR2X1 <./LBP_syn.sdf, line 2815>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U641 of module XNOR2X1 <./LBP_syn.sdf, line 2836>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U641 of module XNOR2X1 <./LBP_syn.sdf, line 2837>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U641 of module XNOR2X1 <./LBP_syn.sdf, line 2840>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U641 of module XNOR2X1 <./LBP_syn.sdf, line 2841>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U639 of module XOR2X1 <./LBP_syn.sdf, line 2862>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U639 of module XOR2X1 <./LBP_syn.sdf, line 2863>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U639 of module XOR2X1 <./LBP_syn.sdf, line 2866>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U639 of module XOR2X1 <./LBP_syn.sdf, line 2867>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U637 of module XOR2X1 <./LBP_syn.sdf, line 2888>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U637 of module XOR2X1 <./LBP_syn.sdf, line 2889>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U637 of module XOR2X1 <./LBP_syn.sdf, line 2892>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U637 of module XOR2X1 <./LBP_syn.sdf, line 2893>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U635 of module XOR2X1 <./LBP_syn.sdf, line 2914>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U635 of module XOR2X1 <./LBP_syn.sdf, line 2915>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U635 of module XOR2X1 <./LBP_syn.sdf, line 2918>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U635 of module XOR2X1 <./LBP_syn.sdf, line 2919>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U633 of module XOR2X1 <./LBP_syn.sdf, line 2940>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U633 of module XOR2X1 <./LBP_syn.sdf, line 2941>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U633 of module XOR2X1 <./LBP_syn.sdf, line 2944>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U633 of module XOR2X1 <./LBP_syn.sdf, line 2945>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U632 of module XOR2X1 <./LBP_syn.sdf, line 2956>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U632 of module XOR2X1 <./LBP_syn.sdf, line 2957>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U632 of module XOR2X1 <./LBP_syn.sdf, line 2960>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U632 of module XOR2X1 <./LBP_syn.sdf, line 2961>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U630 of module XOR2X1 <./LBP_syn.sdf, line 2982>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U630 of module XOR2X1 <./LBP_syn.sdf, line 2983>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U630 of module XOR2X1 <./LBP_syn.sdf, line 2986>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U630 of module XOR2X1 <./LBP_syn.sdf, line 2987>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U629 of module XOR2X1 <./LBP_syn.sdf, line 2998>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U629 of module XOR2X1 <./LBP_syn.sdf, line 2999>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U629 of module XOR2X1 <./LBP_syn.sdf, line 3002>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U629 of module XOR2X1 <./LBP_syn.sdf, line 3003>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U628 of module XOR2X1 <./LBP_syn.sdf, line 3014>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U628 of module XOR2X1 <./LBP_syn.sdf, line 3015>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U628 of module XOR2X1 <./LBP_syn.sdf, line 3018>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U628 of module XOR2X1 <./LBP_syn.sdf, line 3019>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U626 of module XOR2X1 <./LBP_syn.sdf, line 3040>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U626 of module XOR2X1 <./LBP_syn.sdf, line 3041>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U626 of module XOR2X1 <./LBP_syn.sdf, line 3044>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U626 of module XOR2X1 <./LBP_syn.sdf, line 3045>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U624 of module XOR2X1 <./LBP_syn.sdf, line 3066>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U624 of module XOR2X1 <./LBP_syn.sdf, line 3067>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U624 of module XOR2X1 <./LBP_syn.sdf, line 3070>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U624 of module XOR2X1 <./LBP_syn.sdf, line 3071>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U622 of module XOR2X1 <./LBP_syn.sdf, line 3092>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U622 of module XOR2X1 <./LBP_syn.sdf, line 3093>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U622 of module XOR2X1 <./LBP_syn.sdf, line 3096>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U622 of module XOR2X1 <./LBP_syn.sdf, line 3097>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U620 of module XOR2X1 <./LBP_syn.sdf, line 3118>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U620 of module XOR2X1 <./LBP_syn.sdf, line 3119>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U620 of module XOR2X1 <./LBP_syn.sdf, line 3122>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U620 of module XOR2X1 <./LBP_syn.sdf, line 3123>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U618 of module XOR2X1 <./LBP_syn.sdf, line 3144>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U618 of module XOR2X1 <./LBP_syn.sdf, line 3145>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U618 of module XOR2X1 <./LBP_syn.sdf, line 3148>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U618 of module XOR2X1 <./LBP_syn.sdf, line 3149>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U617 of module XOR2X1 <./LBP_syn.sdf, line 3160>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U617 of module XOR2X1 <./LBP_syn.sdf, line 3161>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U617 of module XOR2X1 <./LBP_syn.sdf, line 3164>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U617 of module XOR2X1 <./LBP_syn.sdf, line 3165>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U615 of module XOR2X1 <./LBP_syn.sdf, line 3186>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U615 of module XOR2X1 <./LBP_syn.sdf, line 3187>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U615 of module XOR2X1 <./LBP_syn.sdf, line 3190>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U615 of module XOR2X1 <./LBP_syn.sdf, line 3191>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U613 of module XOR2X1 <./LBP_syn.sdf, line 3212>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U613 of module XOR2X1 <./LBP_syn.sdf, line 3213>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U613 of module XOR2X1 <./LBP_syn.sdf, line 3216>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U613 of module XOR2X1 <./LBP_syn.sdf, line 3217>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U612 of module XOR2X1 <./LBP_syn.sdf, line 3228>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U612 of module XOR2X1 <./LBP_syn.sdf, line 3229>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U612 of module XOR2X1 <./LBP_syn.sdf, line 3232>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U612 of module XOR2X1 <./LBP_syn.sdf, line 3233>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U610 of module XOR2X1 <./LBP_syn.sdf, line 3254>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U610 of module XOR2X1 <./LBP_syn.sdf, line 3255>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U610 of module XOR2X1 <./LBP_syn.sdf, line 3258>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U610 of module XOR2X1 <./LBP_syn.sdf, line 3259>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U608 of module XOR2X1 <./LBP_syn.sdf, line 3280>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U608 of module XOR2X1 <./LBP_syn.sdf, line 3281>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U608 of module XOR2X1 <./LBP_syn.sdf, line 3284>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U608 of module XOR2X1 <./LBP_syn.sdf, line 3285>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U606 of module XOR2X1 <./LBP_syn.sdf, line 3306>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U606 of module XOR2X1 <./LBP_syn.sdf, line 3307>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U606 of module XOR2X1 <./LBP_syn.sdf, line 3310>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U606 of module XOR2X1 <./LBP_syn.sdf, line 3311>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U604 of module XOR2X1 <./LBP_syn.sdf, line 3332>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U604 of module XOR2X1 <./LBP_syn.sdf, line 3333>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U604 of module XOR2X1 <./LBP_syn.sdf, line 3336>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U604 of module XOR2X1 <./LBP_syn.sdf, line 3337>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U368 of module XOR2XL <./LBP_syn.sdf, line 5964>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U368 of module XOR2XL <./LBP_syn.sdf, line 5965>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U368 of module XOR2XL <./LBP_syn.sdf, line 5968>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U368 of module XOR2XL <./LBP_syn.sdf, line 5969>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U367 of module XOR2XL <./LBP_syn.sdf, line 5980>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U367 of module XOR2XL <./LBP_syn.sdf, line 5981>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U367 of module XOR2XL <./LBP_syn.sdf, line 5984>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U367 of module XOR2XL <./LBP_syn.sdf, line 5985>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U354 of module XNOR2XL <./LBP_syn.sdf, line 6116>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U354 of module XNOR2XL <./LBP_syn.sdf, line 6117>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U354 of module XNOR2XL <./LBP_syn.sdf, line 6120>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U354 of module XNOR2XL <./LBP_syn.sdf, line 6121>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U353 of module XNOR2XL <./LBP_syn.sdf, line 6132>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U353 of module XNOR2XL <./LBP_syn.sdf, line 6133>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U353 of module XNOR2XL <./LBP_syn.sdf, line 6136>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U353 of module XNOR2XL <./LBP_syn.sdf, line 6137>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U352 of module XNOR2XL <./LBP_syn.sdf, line 6148>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U352 of module XNOR2XL <./LBP_syn.sdf, line 6149>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U352 of module XNOR2XL <./LBP_syn.sdf, line 6152>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U352 of module XNOR2XL <./LBP_syn.sdf, line 6153>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U350 of module XNOR2XL <./LBP_syn.sdf, line 6173>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U350 of module XNOR2XL <./LBP_syn.sdf, line 6174>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U350 of module XNOR2XL <./LBP_syn.sdf, line 6177>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U350 of module XNOR2XL <./LBP_syn.sdf, line 6178>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U348 of module XOR2XL <./LBP_syn.sdf, line 6198>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U348 of module XOR2XL <./LBP_syn.sdf, line 6199>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U348 of module XOR2XL <./LBP_syn.sdf, line 6202>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U348 of module XOR2XL <./LBP_syn.sdf, line 6203>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U346 of module XOR2XL <./LBP_syn.sdf, line 6223>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U346 of module XOR2XL <./LBP_syn.sdf, line 6224>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U346 of module XOR2XL <./LBP_syn.sdf, line 6227>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U346 of module XOR2XL <./LBP_syn.sdf, line 6228>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U344 of module XOR2XL <./LBP_syn.sdf, line 6248>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U344 of module XOR2XL <./LBP_syn.sdf, line 6249>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U344 of module XOR2XL <./LBP_syn.sdf, line 6252>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U344 of module XOR2XL <./LBP_syn.sdf, line 6253>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U342 of module XOR2XL <./LBP_syn.sdf, line 6273>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U342 of module XOR2XL <./LBP_syn.sdf, line 6274>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U342 of module XOR2XL <./LBP_syn.sdf, line 6277>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U342 of module XOR2XL <./LBP_syn.sdf, line 6278>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U340 of module XOR2XL <./LBP_syn.sdf, line 6298>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U340 of module XOR2XL <./LBP_syn.sdf, line 6299>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U340 of module XOR2XL <./LBP_syn.sdf, line 6302>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U340 of module XOR2XL <./LBP_syn.sdf, line 6303>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U338 of module XOR2XL <./LBP_syn.sdf, line 6323>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U338 of module XOR2XL <./LBP_syn.sdf, line 6324>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U338 of module XOR2XL <./LBP_syn.sdf, line 6327>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U338 of module XOR2XL <./LBP_syn.sdf, line 6328>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U336 of module XOR2XL <./LBP_syn.sdf, line 6348>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U336 of module XOR2XL <./LBP_syn.sdf, line 6349>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U336 of module XOR2XL <./LBP_syn.sdf, line 6352>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U336 of module XOR2XL <./LBP_syn.sdf, line 6353>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U334 of module XOR2XL <./LBP_syn.sdf, line 6373>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U334 of module XOR2XL <./LBP_syn.sdf, line 6374>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U334 of module XOR2XL <./LBP_syn.sdf, line 6377>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U334 of module XOR2XL <./LBP_syn.sdf, line 6378>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U332 of module XOR2XL <./LBP_syn.sdf, line 6398>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U332 of module XOR2XL <./LBP_syn.sdf, line 6399>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U332 of module XOR2XL <./LBP_syn.sdf, line 6402>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U332 of module XOR2XL <./LBP_syn.sdf, line 6403>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U330 of module XOR2XL <./LBP_syn.sdf, line 6423>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U330 of module XOR2XL <./LBP_syn.sdf, line 6424>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U330 of module XOR2XL <./LBP_syn.sdf, line 6427>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U330 of module XOR2XL <./LBP_syn.sdf, line 6428>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U328 of module XOR2XL <./LBP_syn.sdf, line 6448>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U328 of module XOR2XL <./LBP_syn.sdf, line 6449>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U328 of module XOR2XL <./LBP_syn.sdf, line 6452>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U328 of module XOR2XL <./LBP_syn.sdf, line 6453>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.U326 of module XOR2XL <./LBP_syn.sdf, line 6473>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.U326 of module XOR2XL <./LBP_syn.sdf, line 6474>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.U326 of module XOR2XL <./LBP_syn.sdf, line 6477>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.U326 of module XOR2XL <./LBP_syn.sdf, line 6478>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.r425.U1 of module XOR2XL <./LBP_syn.sdf, line 7676>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.r425.U1 of module XOR2XL <./LBP_syn.sdf, line 7677>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.r425.U1 of module XOR2XL <./LBP_syn.sdf, line 7680>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.r425.U1 of module XOR2XL <./LBP_syn.sdf, line 7681>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.LBP.r425.U1_1_1 of module ADDHXL <./LBP_syn.sdf, line 7694>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.LBP.r425.U1_1_1 of module ADDHXL <./LBP_syn.sdf, line 7695>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.LBP.r425.U1_1_1 of module ADDHXL <./LBP_syn.sdf, line 7698>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.LBP.r425.U1_1_1 of module ADDHXL <./LBP_syn.sdf, line 7699>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.LBP.r425.U1_1_7 of module ADDHXL <./LBP_syn.sdf, line 7712>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.LBP.r425.U1_1_7 of module ADDHXL <./LBP_syn.sdf, line 7713>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.LBP.r425.U1_1_7 of module ADDHXL <./LBP_syn.sdf, line 7716>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.LBP.r425.U1_1_7 of module ADDHXL <./LBP_syn.sdf, line 7717>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.LBP.r425.U1_1_8 of module ADDHXL <./LBP_syn.sdf, line 7730>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.LBP.r425.U1_1_8 of module ADDHXL <./LBP_syn.sdf, line 7731>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.LBP.r425.U1_1_8 of module ADDHXL <./LBP_syn.sdf, line 7734>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.LBP.r425.U1_1_8 of module ADDHXL <./LBP_syn.sdf, line 7735>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.LBP.r425.U1_1_9 of module ADDHXL <./LBP_syn.sdf, line 7748>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.LBP.r425.U1_1_9 of module ADDHXL <./LBP_syn.sdf, line 7749>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.LBP.r425.U1_1_9 of module ADDHXL <./LBP_syn.sdf, line 7752>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.LBP.r425.U1_1_9 of module ADDHXL <./LBP_syn.sdf, line 7753>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.LBP.r425.U1_1_10 of module ADDHXL <./LBP_syn.sdf, line 7766>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.LBP.r425.U1_1_10 of module ADDHXL <./LBP_syn.sdf, line 7767>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.LBP.r425.U1_1_10 of module ADDHXL <./LBP_syn.sdf, line 7770>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.LBP.r425.U1_1_10 of module ADDHXL <./LBP_syn.sdf, line 7771>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.LBP.r425.U1_1_11 of module ADDHXL <./LBP_syn.sdf, line 7784>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.LBP.r425.U1_1_11 of module ADDHXL <./LBP_syn.sdf, line 7785>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.LBP.r425.U1_1_11 of module ADDHXL <./LBP_syn.sdf, line 7788>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.LBP.r425.U1_1_11 of module ADDHXL <./LBP_syn.sdf, line 7789>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.LBP.r425.U1_1_2 of module ADDHXL <./LBP_syn.sdf, line 7802>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.LBP.r425.U1_1_2 of module ADDHXL <./LBP_syn.sdf, line 7803>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.LBP.r425.U1_1_2 of module ADDHXL <./LBP_syn.sdf, line 7806>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.LBP.r425.U1_1_2 of module ADDHXL <./LBP_syn.sdf, line 7807>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.LBP.r425.U1_1_3 of module ADDHXL <./LBP_syn.sdf, line 7820>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.LBP.r425.U1_1_3 of module ADDHXL <./LBP_syn.sdf, line 7821>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.LBP.r425.U1_1_3 of module ADDHXL <./LBP_syn.sdf, line 7824>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.LBP.r425.U1_1_3 of module ADDHXL <./LBP_syn.sdf, line 7825>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.LBP.r425.U1_1_4 of module ADDHXL <./LBP_syn.sdf, line 7838>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.LBP.r425.U1_1_4 of module ADDHXL <./LBP_syn.sdf, line 7839>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.LBP.r425.U1_1_4 of module ADDHXL <./LBP_syn.sdf, line 7842>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.LBP.r425.U1_1_4 of module ADDHXL <./LBP_syn.sdf, line 7843>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.LBP.r425.U1_1_5 of module ADDHXL <./LBP_syn.sdf, line 7856>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.LBP.r425.U1_1_5 of module ADDHXL <./LBP_syn.sdf, line 7857>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.LBP.r425.U1_1_5 of module ADDHXL <./LBP_syn.sdf, line 7860>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.LBP.r425.U1_1_5 of module ADDHXL <./LBP_syn.sdf, line 7861>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.LBP.r425.U1_1_6 of module ADDHXL <./LBP_syn.sdf, line 7874>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.LBP.r425.U1_1_6 of module ADDHXL <./LBP_syn.sdf, line 7875>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.LBP.r425.U1_1_6 of module ADDHXL <./LBP_syn.sdf, line 7878>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.LBP.r425.U1_1_6 of module ADDHXL <./LBP_syn.sdf, line 7879>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.LBP.r425.U1_1_12 of module ADDHXL <./LBP_syn.sdf, line 7892>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.LBP.r425.U1_1_12 of module ADDHXL <./LBP_syn.sdf, line 7893>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.LBP.r425.U1_1_12 of module ADDHXL <./LBP_syn.sdf, line 7896>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.LBP.r425.U1_1_12 of module ADDHXL <./LBP_syn.sdf, line 7897>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.add_120.U1 of module XOR2XL <./LBP_syn.sdf, line 7917>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.add_120.U1 of module XOR2XL <./LBP_syn.sdf, line 7918>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.add_120.U1 of module XOR2XL <./LBP_syn.sdf, line 7921>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.add_120.U1 of module XOR2XL <./LBP_syn.sdf, line 7922>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.LBP.add_120.U1_1_7 of module ADDHXL <./LBP_syn.sdf, line 7935>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.LBP.add_120.U1_1_7 of module ADDHXL <./LBP_syn.sdf, line 7936>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.LBP.add_120.U1_1_7 of module ADDHXL <./LBP_syn.sdf, line 7939>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.LBP.add_120.U1_1_7 of module ADDHXL <./LBP_syn.sdf, line 7940>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.LBP.add_120.U1_1_1 of module ADDHXL <./LBP_syn.sdf, line 7953>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.LBP.add_120.U1_1_1 of module ADDHXL <./LBP_syn.sdf, line 7954>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.LBP.add_120.U1_1_1 of module ADDHXL <./LBP_syn.sdf, line 7957>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.LBP.add_120.U1_1_1 of module ADDHXL <./LBP_syn.sdf, line 7958>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.LBP.add_120.U1_1_2 of module ADDHXL <./LBP_syn.sdf, line 7971>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.LBP.add_120.U1_1_2 of module ADDHXL <./LBP_syn.sdf, line 7972>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.LBP.add_120.U1_1_2 of module ADDHXL <./LBP_syn.sdf, line 7975>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.LBP.add_120.U1_1_2 of module ADDHXL <./LBP_syn.sdf, line 7976>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.LBP.add_120.U1_1_3 of module ADDHXL <./LBP_syn.sdf, line 7989>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.LBP.add_120.U1_1_3 of module ADDHXL <./LBP_syn.sdf, line 7990>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.LBP.add_120.U1_1_3 of module ADDHXL <./LBP_syn.sdf, line 7993>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.LBP.add_120.U1_1_3 of module ADDHXL <./LBP_syn.sdf, line 7994>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.LBP.add_120.U1_1_4 of module ADDHXL <./LBP_syn.sdf, line 8007>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.LBP.add_120.U1_1_4 of module ADDHXL <./LBP_syn.sdf, line 8008>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.LBP.add_120.U1_1_4 of module ADDHXL <./LBP_syn.sdf, line 8011>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.LBP.add_120.U1_1_4 of module ADDHXL <./LBP_syn.sdf, line 8012>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.LBP.add_120.U1_1_5 of module ADDHXL <./LBP_syn.sdf, line 8025>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.LBP.add_120.U1_1_5 of module ADDHXL <./LBP_syn.sdf, line 8026>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.LBP.add_120.U1_1_5 of module ADDHXL <./LBP_syn.sdf, line 8029>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.LBP.add_120.U1_1_5 of module ADDHXL <./LBP_syn.sdf, line 8030>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.LBP.add_120.U1_1_6 of module ADDHXL <./LBP_syn.sdf, line 8043>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.LBP.add_120.U1_1_6 of module ADDHXL <./LBP_syn.sdf, line 8044>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.LBP.add_120.U1_1_6 of module ADDHXL <./LBP_syn.sdf, line 8047>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.LBP.add_120.U1_1_6 of module ADDHXL <./LBP_syn.sdf, line 8048>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.LBP.add_120.U1_1_8 of module ADDHXL <./LBP_syn.sdf, line 8061>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.LBP.add_120.U1_1_8 of module ADDHXL <./LBP_syn.sdf, line 8062>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.LBP.add_120.U1_1_8 of module ADDHXL <./LBP_syn.sdf, line 8065>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.LBP.add_120.U1_1_8 of module ADDHXL <./LBP_syn.sdf, line 8066>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.LBP.add_120.U1_1_9 of module ADDHXL <./LBP_syn.sdf, line 8079>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.LBP.add_120.U1_1_9 of module ADDHXL <./LBP_syn.sdf, line 8080>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.LBP.add_120.U1_1_9 of module ADDHXL <./LBP_syn.sdf, line 8083>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.LBP.add_120.U1_1_9 of module ADDHXL <./LBP_syn.sdf, line 8084>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.LBP.add_120.U1_1_10 of module ADDHXL <./LBP_syn.sdf, line 8097>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.LBP.add_120.U1_1_10 of module ADDHXL <./LBP_syn.sdf, line 8098>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.LBP.add_120.U1_1_10 of module ADDHXL <./LBP_syn.sdf, line 8101>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.LBP.add_120.U1_1_10 of module ADDHXL <./LBP_syn.sdf, line 8102>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.LBP.add_120.U1_1_11 of module ADDHXL <./LBP_syn.sdf, line 8115>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.LBP.add_120.U1_1_11 of module ADDHXL <./LBP_syn.sdf, line 8116>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.LBP.add_120.U1_1_11 of module ADDHXL <./LBP_syn.sdf, line 8119>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.LBP.add_120.U1_1_11 of module ADDHXL <./LBP_syn.sdf, line 8120>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.LBP.add_120.U1_1_12 of module ADDHXL <./LBP_syn.sdf, line 8133>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.LBP.add_120.U1_1_12 of module ADDHXL <./LBP_syn.sdf, line 8134>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.LBP.add_120.U1_1_12 of module ADDHXL <./LBP_syn.sdf, line 8137>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.LBP.add_120.U1_1_12 of module ADDHXL <./LBP_syn.sdf, line 8138>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.LBP.add_128.U2 of module XOR2X1 <./LBP_syn.sdf, line 8149>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.LBP.add_128.U2 of module XOR2X1 <./LBP_syn.sdf, line 8150>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.LBP.add_128.U2 of module XOR2X1 <./LBP_syn.sdf, line 8153>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.LBP.add_128.U2 of module XOR2X1 <./LBP_syn.sdf, line 8154>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.LBP.add_128.U1_1_1 of module ADDHXL <./LBP_syn.sdf, line 8176>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.LBP.add_128.U1_1_1 of module ADDHXL <./LBP_syn.sdf, line 8177>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.LBP.add_128.U1_1_1 of module ADDHXL <./LBP_syn.sdf, line 8180>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.LBP.add_128.U1_1_1 of module ADDHXL <./LBP_syn.sdf, line 8181>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.LBP.add_128.U1_1_5 of module ADDHXL <./LBP_syn.sdf, line 8194>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.LBP.add_128.U1_1_5 of module ADDHXL <./LBP_syn.sdf, line 8195>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.LBP.add_128.U1_1_5 of module ADDHXL <./LBP_syn.sdf, line 8198>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.LBP.add_128.U1_1_5 of module ADDHXL <./LBP_syn.sdf, line 8199>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.LBP.add_128.U1_1_4 of module ADDHXL <./LBP_syn.sdf, line 8212>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.LBP.add_128.U1_1_4 of module ADDHXL <./LBP_syn.sdf, line 8213>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.LBP.add_128.U1_1_4 of module ADDHXL <./LBP_syn.sdf, line 8216>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.LBP.add_128.U1_1_4 of module ADDHXL <./LBP_syn.sdf, line 8217>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.LBP.add_128.U1_1_3 of module ADDHXL <./LBP_syn.sdf, line 8230>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.LBP.add_128.U1_1_3 of module ADDHXL <./LBP_syn.sdf, line 8231>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.LBP.add_128.U1_1_3 of module ADDHXL <./LBP_syn.sdf, line 8234>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.LBP.add_128.U1_1_3 of module ADDHXL <./LBP_syn.sdf, line 8235>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.LBP.add_128.U1_1_2 of module ADDHXL <./LBP_syn.sdf, line 8248>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.LBP.add_128.U1_1_2 of module ADDHXL <./LBP_syn.sdf, line 8249>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.LBP.add_128.U1_1_2 of module ADDHXL <./LBP_syn.sdf, line 8252>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.LBP.add_128.U1_1_2 of module ADDHXL <./LBP_syn.sdf, line 8253>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.LBP.add_128.U1_1_6 of module ADDHXL <./LBP_syn.sdf, line 8266>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.LBP.add_128.U1_1_6 of module ADDHXL <./LBP_syn.sdf, line 8267>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.LBP.add_128.U1_1_6 of module ADDHXL <./LBP_syn.sdf, line 8270>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.LBP.add_128.U1_1_6 of module ADDHXL <./LBP_syn.sdf, line 8271>.
+	Annotation completed with 0 Errors and 488 Warnings
+	SDF statistics: No. of Pathdelays = 1697  Annotated = 100.00% -- No. of Tchecks = 300  Annotated = 100.00% 
+				        Total 	   Annotated	  Percentage
+		 Path Delays	        1697	        1697	      100.00
+		      $width	         142	         142	      100.00
+		  $setuphold	         158	         158	      100.00
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.testfixture:v <0x6d4d9864>
+			streams:  16, words: 17547
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                  525      50
+		UDPs:                      50       2
+		Primitives:              1029       8
+		Timing outputs:           591      18
+		Registers:                 66      21
+		Scalar wires:             648       -
+		Expanded wires:             8       1
+		Always blocks:              2       2
+		Initial blocks:            17      17
+		Cont. assignments:          1       1
+		Pseudo assignments:         1       1
+		Timing checks:            458      67
+		Interconnect:            1359       -
+		Delayed tcheck signals:   150      56
+		Simulation timescale:     1ps
+	Writing initial simulation snapshot: worklib.testfixture:v
+Loading snapshot worklib.testfixture:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
+(C) 1996 - 2020 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'LBP.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP_dbg(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.exp_dbg(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.clk(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.reset(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.result_compare(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.err(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.times(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.over(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.exp_num(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.gray_data(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.gray_ready(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.i(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.lbp_data(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.gray_addr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.lbp_addr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.finish(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.lbp_valid(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.gray_req(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.gray_data(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.gray_addr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.lbp_addr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.lbp_data(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.clk(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.reset(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.gray_ready(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.gray_req(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.lbp_valid(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.finish(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n499(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n500(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n501(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n502(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n503(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n504(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n505(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n506(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n507(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n508(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n509(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n510(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n511(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n512(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n513(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n514(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n515(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n516(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n517(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n518(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n519(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n520(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n521(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n522(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N115(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N116(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N117(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N118(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N119(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N120(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N121(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N122(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N123(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N124(36)
+*Verdi* WARNING: The above messages are printed 50 times. No more similar message will be printed out.
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N125(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_lbp_mem.LBP_M(116)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_lbp_mem.i(25)
+*Verdi* : End of traversing.
+-----------------------------------------------------
+
+START!!! Simulation Start .....
+
+-----------------------------------------------------
+
+Output pixel: 0 ~           0 are correct!
+
+Output pixel: 0 ~        1000 are correct!
+
+Output pixel: 0 ~        2000 are correct!
+
+Output pixel: 0 ~        3000 are correct!
+
+Output pixel: 0 ~        4000 are correct!
+
+Output pixel: 0 ~        5000 are correct!
+
+Output pixel: 0 ~        6000 are correct!
+
+Output pixel: 0 ~        7000 are correct!
+
+Output pixel: 0 ~        8000 are correct!
+
+Output pixel: 0 ~        9000 are correct!
+
+Output pixel: 0 ~       10000 are correct!
+
+Output pixel: 0 ~       11000 are correct!
+
+Output pixel: 0 ~       12000 are correct!
+
+Output pixel: 0 ~       13000 are correct!
+
+Output pixel: 0 ~       14000 are correct!
+
+Output pixel: 0 ~       15000 are correct!
+
+Output pixel: 0 ~       16000 are correct!
+
+Output pixel: 0 ~       16383 are correct!
+
+-----------------------------------------------------
+
+Congratulations! All data have been generated successfully!
+
+-------------------------PASS------------------------
+
+Simulation complete via $finish(1) at time 1171698 NS + 0
+./testfixture.v:128       #(`CYCLE/2); $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Aug 06, 2022 at 16:17:46 CST  (total: 00:00:04)

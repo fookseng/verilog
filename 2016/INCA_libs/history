@@ -1,0 +1,19 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(05Aug2022:22:29:46):( ncverilog testfixture.v LBP_syn.v -v tsmc13_neg.v +define+SDF +access+r )
+s2::(05Aug2022:22:32:05):( ncverilog testfixture.v LBP_syn.v -v tsmc13_neg.v +define+SDF +access+r )
+s3::(05Aug2022:22:32:58):( ncverilog testfixture.v LBP_syn.v -v tsmc13_neg.v +define+SDF +access+r )
+s4::(05Aug2022:22:37:46):( ncverilog testfixture.v LBP_syn.v -v tsmc13_neg.v +define+SDF +access+r )
+s5::(05Aug2022:22:38:08):( ncverilog testfixture.v LBP_syn.v -v tsmc13_neg.v +define+SDF +access+r )
+s6::(05Aug2022:22:41:33):( ncverilog testfixture.v LBP_syn.v -v tsmc13_neg.v +define+SDF )
+s7::(06Aug2022:16:15:13):( ncverilog testfixture.v LBP_syn.v -v tsmc13_neg.v +define+SDF )
+s8::(06Aug2022:16:15:33):( ncverilog testfixture.v LBP_syn.v -v tsmc13_neg.v +define+SDF )
+s9::(06Aug2022:16:15:54):( ncverilog testfixture.v LBP_syn.v -v tsmc13_neg.v +define+SDF )
+s10::(06Aug2022:16:16:09):( ncverilog testfixture.v LBP_syn.v -v tsmc13_neg.v +define+SDF )
+s11::(06Aug2022:16:16:24):( ncverilog testfixture.v LBP_syn.v -v tsmc13_neg.v +define+SDF )
+s12::(06Aug2022:16:16:44):( ncverilog testfixture.v LBP_syn.v -v tsmc13_neg.v +define+SDF )
+s13::(06Aug2022:16:17:12):( ncverilog testfixture.v LBP_syn.v -v tsmc13_neg.v +define+SDF )
+s14::(06Aug2022:16:17:28):( ncverilog testfixture.v LBP_syn.v -v tsmc13_neg.v +define+SDF )
+s15::(06Aug2022:16:17:42):( ncverilog testfixture.v LBP_syn.v -v tsmc13_neg.v +define+SDF )
