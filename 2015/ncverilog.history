@@ -1,0 +1,12 @@
+s1(07Aug2022:18:14:31):  ncverilog testfixture.v SET_syn.v -v tsmc13_neg.v +define+SDF +define+MD1 +access+r 
+s2(07Aug2022:18:14:57):  ncverilog testfixture.v SET_syn.v -v tsmc13_neg.v +define+SDF +define+MD2 +access+r 
+s3(07Aug2022:18:15:04):  ncverilog testfixture.v SET_syn.v -v tsmc13_neg.v +define+SDF +define+MD3 +access+r 
+s4(07Aug2022:18:15:11):  ncverilog testfixture.v SET_syn.v -v tsmc13_neg.v +define+SDF +define+MD4 +access+r 
+s5(07Aug2022:18:15:28):  ncverilog testfixture.v SET_syn.v -v tsmc13_neg.v +define+SDF +define+MD4 +access+r 
+s6(07Aug2022:18:15:46):  ncverilog testfixture.v SET_syn.v -v tsmc13_neg.v +define+SDF +define+MD4 +access+r 
+s7(07Aug2022:18:16:00):  ncverilog testfixture.v SET_syn.v -v tsmc13_neg.v +define+SDF +define+MD4 +access+r 
+s8(07Aug2022:18:16:14):  ncverilog testfixture.v SET_syn.v -v tsmc13_neg.v +define+SDF +define+MD4 +access+r 
+s9(07Aug2022:18:16:31):  ncverilog testfixture.v SET_syn.v -v tsmc13_neg.v +define+SDF +define+MD4 +access+r 
+s10(07Aug2022:18:16:52):  ncverilog testfixture.v SET_syn.v -v tsmc13_neg.v +define+SDF +define+MD3 +access+r 
+s11(07Aug2022:18:17:01):  ncverilog testfixture.v SET_syn.v -v tsmc13_neg.v +define+SDF +define+MD2 +access+r 
+s12(07Aug2022:18:17:07):  ncverilog testfixture.v SET_syn.v -v tsmc13_neg.v +define+SDF +define+MD1 +access+r 
