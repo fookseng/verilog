@@ -1,0 +1,7 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(08Aug2022:15:32:45):( ncverilog testfixture.v lcd_ctrl_syn.v -v tsmc13_neg.v +define+tb1 )
+s2::(08Aug2022:15:32:50):( ncverilog testfixture.v lcd_ctrl_syn.v -v tsmc13_neg.v +define+tb2 )
+s3::(08Aug2022:15:33:12):( ncverilog testfixture.v lcd_ctrl_syn.v -v tsmc13_neg.v +define+tb1 )

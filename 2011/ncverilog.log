@@ -1,0 +1,339 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Aug 08, 2022 at 15:33:12 CST
+ncverilog
+	testfixture.v
+	lcd_ctrl_syn.v
+	-v
+	tsmc13_neg.v
+	+define+tb1
+file: testfixture.v
+	module worklib.IRB:v
+		errors: 0, warnings: 0
+	module worklib.IROM:v
+		errors: 0, warnings: 0
+	module worklib.irom:v
+		errors: 0, warnings: 0
+	module worklib.test:v
+		errors: 0, warnings: 0
+file: lcd_ctrl_syn.v
+	module worklib.LCD_CTRL_DW01_add_1:v
+		errors: 0, warnings: 0
+	module worklib.LCD_CTRL:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+		Caching library 'tsmc13_neg' ....... Done
+	Elaborating the design hierarchy:
+  LCD_CTRL_DW01_add_1 add_152 ( .A(addend_1), .B({1'b0, 1'b0, addend_2[7:0]}), 
+                            |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,702|28): 1 output port was not connected:
+ncelab: (./lcd_ctrl_syn.v,8): CO
+
+  DFFRX1 \cur_state_reg[3]  ( .D(nxt_state[3]), .CK(clk), .RN(n4839), .Q(n4333) );
+                          |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,834|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \cur_state_reg[0]  ( .D(nxt_state[0]), .CK(clk), .RN(n4841), .QN(
+                          |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,983|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFXL \image_reg[0][5]  ( .D(n4313), .CK(clk), .Q(\image[0][5] ) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,1136|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17818): QN
+
+  DFFXL \image_reg[0][4]  ( .D(n4322), .CK(clk), .Q(\image[0][4] ) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,1137|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17818): QN
+
+  DFFXL \image_reg[0][2]  ( .D(n4321), .CK(clk), .Q(\image[0][2] ) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,1138|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17818): QN
+
+  DFFXL \image_reg[0][1]  ( .D(n4323), .CK(clk), .Q(\image[0][1] ) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,1185|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17818): QN
+
+  DFFXL \image_reg[0][6]  ( .D(n4261), .CK(clk), .Q(\image[0][6] ) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,1232|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17818): QN
+
+  DFFXL \image_reg[0][3]  ( .D(n4263), .CK(clk), .Q(\image[0][3] ) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,1233|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17818): QN
+
+  DFFXL \image_reg[0][0]  ( .D(n4268), .CK(clk), .Q(\image[0][0] ) );
+                        |
+ncelab: *W,CUVWSP (./lcd_ctrl_syn.v,1234|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17818): QN
+
+	Reading SDF file from location "./lcd_ctrl_syn.sdf"
+	Annotating SDF timing data:
+		Compiled SDF file:     lcd_ctrl_syn.sdf.X
+		Log file:              
+		Backannotation scope:  test.top
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance test.top.U8703 of module XOR2X1 <./lcd_ctrl_syn.sdf, line 17595>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance test.top.U8703 of module XOR2X1 <./lcd_ctrl_syn.sdf, line 17596>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance test.top.U8703 of module XOR2X1 <./lcd_ctrl_syn.sdf, line 17599>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance test.top.U8703 of module XOR2X1 <./lcd_ctrl_syn.sdf, line 17600>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance test.top.U8701 of module XNOR2X1 <./lcd_ctrl_syn.sdf, line 17621>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance test.top.U8701 of module XNOR2X1 <./lcd_ctrl_syn.sdf, line 17622>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance test.top.U8701 of module XNOR2X1 <./lcd_ctrl_syn.sdf, line 17625>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance test.top.U8701 of module XNOR2X1 <./lcd_ctrl_syn.sdf, line 17626>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance test.top.U8694 of module XOR2X1 <./lcd_ctrl_syn.sdf, line 17700>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance test.top.U8694 of module XOR2X1 <./lcd_ctrl_syn.sdf, line 17701>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance test.top.U8694 of module XOR2X1 <./lcd_ctrl_syn.sdf, line 17704>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance test.top.U8694 of module XOR2X1 <./lcd_ctrl_syn.sdf, line 17705>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance test.top.U8693 of module XNOR2X1 <./lcd_ctrl_syn.sdf, line 17716>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance test.top.U8693 of module XNOR2X1 <./lcd_ctrl_syn.sdf, line 17717>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance test.top.U8693 of module XNOR2X1 <./lcd_ctrl_syn.sdf, line 17720>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance test.top.U8693 of module XNOR2X1 <./lcd_ctrl_syn.sdf, line 17721>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance test.top.U8691 of module XNOR2X1 <./lcd_ctrl_syn.sdf, line 17742>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance test.top.U8691 of module XNOR2X1 <./lcd_ctrl_syn.sdf, line 17743>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance test.top.U8691 of module XNOR2X1 <./lcd_ctrl_syn.sdf, line 17746>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance test.top.U8691 of module XNOR2X1 <./lcd_ctrl_syn.sdf, line 17747>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance test.top.U8690 of module XOR2X1 <./lcd_ctrl_syn.sdf, line 17758>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance test.top.U8690 of module XOR2X1 <./lcd_ctrl_syn.sdf, line 17759>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance test.top.U8690 of module XOR2X1 <./lcd_ctrl_syn.sdf, line 17762>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance test.top.U8690 of module XOR2X1 <./lcd_ctrl_syn.sdf, line 17763>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance test.top.U8688 of module XOR2X1 <./lcd_ctrl_syn.sdf, line 17784>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance test.top.U8688 of module XOR2X1 <./lcd_ctrl_syn.sdf, line 17785>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance test.top.U8688 of module XOR2X1 <./lcd_ctrl_syn.sdf, line 17788>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance test.top.U8688 of module XOR2X1 <./lcd_ctrl_syn.sdf, line 17789>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance test.top.U8376 of module ADDHXL <./lcd_ctrl_syn.sdf, line 21642>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance test.top.U8376 of module ADDHXL <./lcd_ctrl_syn.sdf, line 21643>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance test.top.U8376 of module ADDHXL <./lcd_ctrl_syn.sdf, line 21646>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance test.top.U8376 of module ADDHXL <./lcd_ctrl_syn.sdf, line 21647>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance test.top.U8375 of module ADDHXL <./lcd_ctrl_syn.sdf, line 21660>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance test.top.U8375 of module ADDHXL <./lcd_ctrl_syn.sdf, line 21661>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance test.top.U8375 of module ADDHXL <./lcd_ctrl_syn.sdf, line 21664>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance test.top.U8375 of module ADDHXL <./lcd_ctrl_syn.sdf, line 21665>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance test.top.U7430 of module ADDHXL <./lcd_ctrl_syn.sdf, line 33284>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance test.top.U7430 of module ADDHXL <./lcd_ctrl_syn.sdf, line 33285>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance test.top.U7430 of module ADDHXL <./lcd_ctrl_syn.sdf, line 33288>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance test.top.U7430 of module ADDHXL <./lcd_ctrl_syn.sdf, line 33289>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance test.top.U7429 of module ADDHXL <./lcd_ctrl_syn.sdf, line 33302>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance test.top.U7429 of module ADDHXL <./lcd_ctrl_syn.sdf, line 33303>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance test.top.U7429 of module ADDHXL <./lcd_ctrl_syn.sdf, line 33306>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance test.top.U7429 of module ADDHXL <./lcd_ctrl_syn.sdf, line 33307>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance test.top.add_152.U4 of module XOR2X1 <./lcd_ctrl_syn.sdf, line 81472>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance test.top.add_152.U4 of module XOR2X1 <./lcd_ctrl_syn.sdf, line 81473>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance test.top.add_152.U4 of module XOR2X1 <./lcd_ctrl_syn.sdf, line 81476>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance test.top.add_152.U4 of module XOR2X1 <./lcd_ctrl_syn.sdf, line 81477>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance test.top.add_152.U3 of module XOR2XL <./lcd_ctrl_syn.sdf, line 81488>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance test.top.add_152.U3 of module XOR2XL <./lcd_ctrl_syn.sdf, line 81489>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance test.top.add_152.U3 of module XOR2XL <./lcd_ctrl_syn.sdf, line 81492>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance test.top.add_152.U3 of module XOR2XL <./lcd_ctrl_syn.sdf, line 81493>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance test.top.add_152.U2 of module XNOR2X1 <./lcd_ctrl_syn.sdf, line 81504>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance test.top.add_152.U2 of module XNOR2X1 <./lcd_ctrl_syn.sdf, line 81505>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance test.top.add_152.U2 of module XNOR2X1 <./lcd_ctrl_syn.sdf, line 81508>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance test.top.add_152.U2 of module XNOR2X1 <./lcd_ctrl_syn.sdf, line 81509>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance test.top.add_152.U1_7 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81539>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance test.top.add_152.U1_7 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81540>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance test.top.add_152.U1_7 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81545>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance test.top.add_152.U1_7 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81546>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance test.top.add_152.U1_7 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81549>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance test.top.add_152.U1_7 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81550>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance test.top.add_152.U1_4 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81570>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance test.top.add_152.U1_4 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81571>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance test.top.add_152.U1_4 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81576>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance test.top.add_152.U1_4 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81577>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance test.top.add_152.U1_4 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81580>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance test.top.add_152.U1_4 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81581>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance test.top.add_152.U1_1 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81601>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance test.top.add_152.U1_1 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81602>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance test.top.add_152.U1_1 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81607>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance test.top.add_152.U1_1 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81608>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance test.top.add_152.U1_1 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81611>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance test.top.add_152.U1_1 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81612>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance test.top.add_152.U1_2 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81632>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance test.top.add_152.U1_2 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81633>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance test.top.add_152.U1_2 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81638>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance test.top.add_152.U1_2 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81639>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance test.top.add_152.U1_2 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81642>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance test.top.add_152.U1_2 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81643>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance test.top.add_152.U1_3 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81663>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance test.top.add_152.U1_3 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81664>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance test.top.add_152.U1_3 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81669>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance test.top.add_152.U1_3 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81670>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance test.top.add_152.U1_3 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81673>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance test.top.add_152.U1_3 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81674>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance test.top.add_152.U1_5 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81694>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance test.top.add_152.U1_5 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81695>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance test.top.add_152.U1_5 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81700>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance test.top.add_152.U1_5 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81701>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance test.top.add_152.U1_5 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81704>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance test.top.add_152.U1_5 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81705>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance test.top.add_152.U1_6 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81725>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance test.top.add_152.U1_6 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81726>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance test.top.add_152.U1_6 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81731>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance test.top.add_152.U1_6 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81732>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance test.top.add_152.U1_6 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81735>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance test.top.add_152.U1_6 of module ADDFXL <./lcd_ctrl_syn.sdf, line 81736>.
+	Annotation completed with 0 Errors and 98 Warnings
+	SDF statistics: No. of Pathdelays = 17524  Annotated = 99.91% -- No. of Tchecks = 2654  Annotated = 97.97% 
+				        Total 	   Annotated	  Percentage
+		 Path Delays	       17524	       17508	       99.91
+		     $period	           2	           0	        0.00
+		      $width	        1184	        1180	       99.66
+		  $setuphold	        1468	        1420	       96.73
+	Building instance overlay tables: ....................
+	$readmemb(`IMAGE, mem );
+	                    |
+ncelab: *W,MEMODR (./IROM.v,153|21): $readmem default memory order incompatible with IEEE1364.
+ Done
+	Generating native compiled code:
+		worklib.IRB:v <0x197185aa>
+			streams:  16, words:  4639
+		worklib.IROM:v <0x712ca866>
+			streams:   1, words:   235
+		worklib.LCD_CTRL:v <0x4902a39e>
+			streams:   0, words:     0
+		worklib.irom:v <0x077473e0>
+			streams:  13, words:  3767
+		worklib.test:v <0x44e1ebc4>
+			streams:  10, words:  8942
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                     Instances  Unique
+		Modules:                  5208      84
+		UDPs:                      564       2
+		Primitives:              12712       8
+		Timing outputs:           5686      29
+		Registers:                 655     101
+		Scalar wires:             6263       -
+		Expanded wires:             26       4
+		Always blocks:               6       6
+		Initial blocks:              8       8
+		Cont. assignments:           4       6
+		Pseudo assignments:          1       1
+		Timing checks:            4122     651
+		Interconnect:            17544       -
+		Delayed tcheck signals:   1300     587
+		Simulation timescale:      1ps
+	Writing initial simulation snapshot: worklib.test:v
+Loading snapshot worklib.test:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
+(C) 1996 - 2020 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'LCD_CTRL.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.clk(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.reset(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.err_IRB(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.cmd(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.cmd_valid(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.i(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.j(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.k(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.l(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.err(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.over(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_EN(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_A(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRB_RW(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRB_D(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRB_A(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.busy(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.done(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_Q(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.IROM_Q(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.cmd(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.IROM_A(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.IRB_D(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.IRB_A(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.clk(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.reset(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.cmd_valid(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.IROM_EN(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.IRB_RW(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.busy(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.done(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.N1651(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.N1652(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.N1653(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.n5725(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.n5726(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.n5727(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.n5728(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.n5729(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.n5730(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.n5731(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.n5732(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.n5733(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.n5734(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.n5735(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.n5736(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.n5737(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.n5738(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.n5739(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.n5740(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.n5741(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.n5742(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.n5743(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.n5744(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.n5745(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.n5746(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.n5747(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.n5748(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.\image[63][7] (36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.\image[63][6] (36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.\image[63][5] (36)
+*Verdi* WARNING: The above messages are printed 50 times. No more similar message will be printed out.
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.top.\image[63][4] (36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.irom_1.NOT_A(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.irom_1.LAST_NOT_CEN(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.irom_1.LAST_NOT_A(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.irom_1.LAST_NOT_CLK_PER(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.irom_1.LAST_NOT_CLK_MINH(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.irom_1.LAST_NOT_CLK_MINL(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.irom_1.LATCHED_CEN(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.irom_1.LATCHED_A(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.irom_1.CENi(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.irom_1.Ai(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.irom_1.Qi(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.irom_1.LAST_CLK(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRB_1.mem(116)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRB_1.NOT_A(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRB_1.NOT_D(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRB_1.LAST_NOT_CEN(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRB_1.LAST_NOT_WEN(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRB_1.LAST_NOT_A(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRB_1.LAST_NOT_D(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRB_1.LAST_NOT_CLK_PER(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRB_1.LAST_NOT_CLK_MINH(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRB_1.LAST_NOT_CLK_MINL(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRB_1.LATCHED_CEN(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRB_1.LATCHED_WEN(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRB_1.LATCHED_A(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRB_1.LATCHED_D(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRB_1.CENi(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRB_1.WENi(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRB_1.Ai(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRB_1.Di(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRB_1.Qi(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRB_1.LAST_Qi(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRB_1.LAST_CLK(48)
+*Verdi* : End of traversing.
+All data have been generated successfully!
+
+-------------------PASS-------------------
+
+Simulation complete via $finish(1) at time 2156236 PS + 0
+./testfixture.v:137 		    #10 $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Aug 08, 2022 at 15:33:14 CST  (total: 00:00:02)
