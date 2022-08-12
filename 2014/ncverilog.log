@@ -1,0 +1,253 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Aug 12, 2022 at 16:04:41 CST
+ncverilog
+	testfixture1.v
+	STI_DAC_syn.v
+	-v
+	tsmc13_neg.v
+	+define+SDF
+	+access+r
+file: STI_DAC_syn.v
+	module worklib.STI_DAC:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+		Caching library 'tsmc13_neg' ....... Done
+	Elaborating the design hierarchy:
+  DFFNSRX1 \temp_reg[7]  ( .D(n177), .CKN(clk), .SN(1'b1), .RN(n411), .QN(n130) );
+                       |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,51|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19204): Q
+
+  DFFNSRX1 \temp_reg[6]  ( .D(n178), .CKN(clk), .SN(1'b1), .RN(n411), .QN(n331) );
+                       |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,52|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19204): Q
+
+  DFFNSRX1 \temp_reg[5]  ( .D(n179), .CKN(clk), .SN(1'b1), .RN(n411), .QN(n330) );
+                       |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,53|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19204): Q
+
+  DFFNSRX1 \temp_reg[4]  ( .D(n180), .CKN(clk), .SN(1'b1), .RN(n411), .QN(n329) );
+                       |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,54|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19204): Q
+
+  DFFNSRX1 \temp_reg[3]  ( .D(n181), .CKN(clk), .SN(1'b1), .RN(n411), .QN(n328) );
+                       |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,55|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19204): Q
+
+  DFFNSRX1 \temp_reg[2]  ( .D(n182), .CKN(clk), .SN(1'b1), .RN(n411), .QN(n327) );
+                       |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,56|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19204): Q
+
+  DFFNSRX1 \temp_reg[1]  ( .D(n183), .CKN(clk), .SN(1'b1), .RN(n411), .QN(n324) );
+                       |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,57|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19204): Q
+
+  DFFNSRX1 \temp_reg[0]  ( .D(n157), .CKN(clk), .SN(1'b1), .RN(n411), .QN(n326) );
+                       |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,58|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19204): Q
+
+  DFFRX1 \memory_flag_reg[0]  ( .D(n174), .CK(clk), .RN(n411), .Q(n401) );
+                            |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,60|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \memory_flag_reg[1]  ( .D(n173), .CK(clk), .RN(n411), .Q(n402) );
+                            |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,61|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \memory_flag_reg[2]  ( .D(n172), .CK(clk), .RN(n411), .Q(n403) );
+                            |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,62|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \oem_addr_reg[2]  ( .D(n169), .CK(clk), .RN(n411), .QN(n192) );
+                         |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,69|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \oem_addr_reg[1]  ( .D(n171), .CK(clk), .RN(n411), .QN(n194) );
+                         |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,70|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \oem_addr_reg[3]  ( .D(n168), .CK(clk), .RN(n411), .QN(n191) );
+                         |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,72|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \oem_addr_reg[4]  ( .D(n167), .CK(clk), .RN(n411), .QN(n195) );
+                         |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,73|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+	Reading SDF file from location "./STI_DAC_syn.sdf"
+	Annotating SDF timing data:
+		Compiled SDF file:     STI_DAC_syn.sdf.X
+		Log file:              
+		Backannotation scope:  testfixture1.u_rtl
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture1.u_rtl.U377 of module XNOR2X1 <./STI_DAC_syn.sdf, line 1371>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture1.u_rtl.U377 of module XNOR2X1 <./STI_DAC_syn.sdf, line 1372>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture1.u_rtl.U377 of module XNOR2X1 <./STI_DAC_syn.sdf, line 1375>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture1.u_rtl.U377 of module XNOR2X1 <./STI_DAC_syn.sdf, line 1376>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture1.u_rtl.U376 of module XOR2X1 <./STI_DAC_syn.sdf, line 1387>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture1.u_rtl.U376 of module XOR2X1 <./STI_DAC_syn.sdf, line 1388>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture1.u_rtl.U376 of module XOR2X1 <./STI_DAC_syn.sdf, line 1391>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture1.u_rtl.U376 of module XOR2X1 <./STI_DAC_syn.sdf, line 1392>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture1.u_rtl.U374 of module XNOR2X1 <./STI_DAC_syn.sdf, line 1413>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture1.u_rtl.U374 of module XNOR2X1 <./STI_DAC_syn.sdf, line 1414>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture1.u_rtl.U374 of module XNOR2X1 <./STI_DAC_syn.sdf, line 1417>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture1.u_rtl.U374 of module XNOR2X1 <./STI_DAC_syn.sdf, line 1418>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance testfixture1.u_rtl.U369 of module MXI2X1 <./STI_DAC_syn.sdf, line 1471>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance testfixture1.u_rtl.U369 of module MXI2X1 <./STI_DAC_syn.sdf, line 1472>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture1.u_rtl.U365 of module XOR2X1 <./STI_DAC_syn.sdf, line 1514>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture1.u_rtl.U365 of module XOR2X1 <./STI_DAC_syn.sdf, line 1515>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture1.u_rtl.U365 of module XOR2X1 <./STI_DAC_syn.sdf, line 1518>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture1.u_rtl.U365 of module XOR2X1 <./STI_DAC_syn.sdf, line 1519>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture1.u_rtl.U256 of module XOR2X1 <./STI_DAC_syn.sdf, line 2764>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture1.u_rtl.U256 of module XOR2X1 <./STI_DAC_syn.sdf, line 2765>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture1.u_rtl.U256 of module XOR2X1 <./STI_DAC_syn.sdf, line 2768>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture1.u_rtl.U256 of module XOR2X1 <./STI_DAC_syn.sdf, line 2769>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture1.u_rtl.U255 of module XOR2X1 <./STI_DAC_syn.sdf, line 2780>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture1.u_rtl.U255 of module XOR2X1 <./STI_DAC_syn.sdf, line 2781>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture1.u_rtl.U255 of module XOR2X1 <./STI_DAC_syn.sdf, line 2784>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture1.u_rtl.U255 of module XOR2X1 <./STI_DAC_syn.sdf, line 2785>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture1.u_rtl.U253 of module XNOR2X1 <./STI_DAC_syn.sdf, line 2806>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture1.u_rtl.U253 of module XNOR2X1 <./STI_DAC_syn.sdf, line 2807>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture1.u_rtl.U253 of module XNOR2X1 <./STI_DAC_syn.sdf, line 2810>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture1.u_rtl.U253 of module XNOR2X1 <./STI_DAC_syn.sdf, line 2811>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture1.u_rtl.U246 of module XOR2X1 <./STI_DAC_syn.sdf, line 2885>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture1.u_rtl.U246 of module XOR2X1 <./STI_DAC_syn.sdf, line 2886>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture1.u_rtl.U246 of module XOR2X1 <./STI_DAC_syn.sdf, line 2889>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture1.u_rtl.U246 of module XOR2X1 <./STI_DAC_syn.sdf, line 2890>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture1.u_rtl.U238 of module ADDHXL <./STI_DAC_syn.sdf, line 2972>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture1.u_rtl.U238 of module ADDHXL <./STI_DAC_syn.sdf, line 2973>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture1.u_rtl.U238 of module ADDHXL <./STI_DAC_syn.sdf, line 2976>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture1.u_rtl.U238 of module ADDHXL <./STI_DAC_syn.sdf, line 2977>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture1.u_rtl.U237 of module ADDHXL <./STI_DAC_syn.sdf, line 2990>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture1.u_rtl.U237 of module ADDHXL <./STI_DAC_syn.sdf, line 2991>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture1.u_rtl.U237 of module ADDHXL <./STI_DAC_syn.sdf, line 2994>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture1.u_rtl.U237 of module ADDHXL <./STI_DAC_syn.sdf, line 2995>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture1.u_rtl.U236 of module ADDHXL <./STI_DAC_syn.sdf, line 3008>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture1.u_rtl.U236 of module ADDHXL <./STI_DAC_syn.sdf, line 3009>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture1.u_rtl.U236 of module ADDHXL <./STI_DAC_syn.sdf, line 3012>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture1.u_rtl.U236 of module ADDHXL <./STI_DAC_syn.sdf, line 3013>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture1.u_rtl.U235 of module ADDHXL <./STI_DAC_syn.sdf, line 3026>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture1.u_rtl.U235 of module ADDHXL <./STI_DAC_syn.sdf, line 3027>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture1.u_rtl.U235 of module ADDHXL <./STI_DAC_syn.sdf, line 3030>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture1.u_rtl.U235 of module ADDHXL <./STI_DAC_syn.sdf, line 3031>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture1.u_rtl.U234 of module ADDHXL <./STI_DAC_syn.sdf, line 3044>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture1.u_rtl.U234 of module ADDHXL <./STI_DAC_syn.sdf, line 3045>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture1.u_rtl.U234 of module ADDHXL <./STI_DAC_syn.sdf, line 3048>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture1.u_rtl.U234 of module ADDHXL <./STI_DAC_syn.sdf, line 3049>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture1.u_rtl.U233 of module ADDHXL <./STI_DAC_syn.sdf, line 3062>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture1.u_rtl.U233 of module ADDHXL <./STI_DAC_syn.sdf, line 3063>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture1.u_rtl.U233 of module ADDHXL <./STI_DAC_syn.sdf, line 3066>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture1.u_rtl.U233 of module ADDHXL <./STI_DAC_syn.sdf, line 3067>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture1.u_rtl.U232 of module ADDHXL <./STI_DAC_syn.sdf, line 3080>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture1.u_rtl.U232 of module ADDHXL <./STI_DAC_syn.sdf, line 3081>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture1.u_rtl.U232 of module ADDHXL <./STI_DAC_syn.sdf, line 3084>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture1.u_rtl.U232 of module ADDHXL <./STI_DAC_syn.sdf, line 3085>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture1.u_rtl.U231 of module ADDHXL <./STI_DAC_syn.sdf, line 3098>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture1.u_rtl.U231 of module ADDHXL <./STI_DAC_syn.sdf, line 3099>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture1.u_rtl.U231 of module ADDHXL <./STI_DAC_syn.sdf, line 3102>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture1.u_rtl.U231 of module ADDHXL <./STI_DAC_syn.sdf, line 3103>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture1.u_rtl.U230 of module ADDHXL <./STI_DAC_syn.sdf, line 3116>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture1.u_rtl.U230 of module ADDHXL <./STI_DAC_syn.sdf, line 3117>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture1.u_rtl.U230 of module ADDHXL <./STI_DAC_syn.sdf, line 3120>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture1.u_rtl.U230 of module ADDHXL <./STI_DAC_syn.sdf, line 3121>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture1.u_rtl.U229 of module ADDHXL <./STI_DAC_syn.sdf, line 3134>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture1.u_rtl.U229 of module ADDHXL <./STI_DAC_syn.sdf, line 3135>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture1.u_rtl.U229 of module ADDHXL <./STI_DAC_syn.sdf, line 3138>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture1.u_rtl.U229 of module ADDHXL <./STI_DAC_syn.sdf, line 3139>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture1.u_rtl.U228 of module ADDHXL <./STI_DAC_syn.sdf, line 3152>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture1.u_rtl.U228 of module ADDHXL <./STI_DAC_syn.sdf, line 3153>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture1.u_rtl.U228 of module ADDHXL <./STI_DAC_syn.sdf, line 3156>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture1.u_rtl.U228 of module ADDHXL <./STI_DAC_syn.sdf, line 3157>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture1.u_rtl.U223 of module XOR2XL <./STI_DAC_syn.sdf, line 3213>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture1.u_rtl.U223 of module XOR2XL <./STI_DAC_syn.sdf, line 3214>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture1.u_rtl.U223 of module XOR2XL <./STI_DAC_syn.sdf, line 3217>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture1.u_rtl.U223 of module XOR2XL <./STI_DAC_syn.sdf, line 3218>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance testfixture1.u_rtl.U222 of module MX2XL <./STI_DAC_syn.sdf, line 3231>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance testfixture1.u_rtl.U222 of module MX2XL <./STI_DAC_syn.sdf, line 3232>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance testfixture1.u_rtl.U219 of module MX2XL <./STI_DAC_syn.sdf, line 3268>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance testfixture1.u_rtl.U219 of module MX2XL <./STI_DAC_syn.sdf, line 3269>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance testfixture1.u_rtl.U217 of module MX2XL <./STI_DAC_syn.sdf, line 3292>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance testfixture1.u_rtl.U217 of module MX2XL <./STI_DAC_syn.sdf, line 3293>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance testfixture1.u_rtl.U201 of module MXI2XL <./STI_DAC_syn.sdf, line 3449>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance testfixture1.u_rtl.U201 of module MXI2XL <./STI_DAC_syn.sdf, line 3450>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance testfixture1.u_rtl.U199 of module MX2XL <./STI_DAC_syn.sdf, line 3472>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance testfixture1.u_rtl.U199 of module MX2XL <./STI_DAC_syn.sdf, line 3473>.
+	Annotation completed with 0 Errors and 92 Warnings
+	SDF statistics: No. of Pathdelays = 922  Annotated = 100.00% -- No. of Tchecks = 272  Annotated = 91.18% 
+				        Total 	   Annotated	  Percentage
+		 Path Delays	         922	         922	      100.00
+		       $hold	          16	           0	        0.00
+		      $width	         128	         128	      100.00
+		  $setuphold	         128	         120	       93.75
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.STI_DAC:v <0x6500c6f6>
+			streams:   0, words:     0
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                 289      57
+		UDPs:                     51       2
+		Primitives:              609       8
+		Timing outputs:          338      20
+		Registers:                94      57
+		Scalar wires:            396       -
+		Expanded wires:           18       2
+		Vectored wires:            2       -
+		Always blocks:            10      10
+		Initial blocks:           13      13
+		Cont. assignments:         1       5
+		Pseudo assignments:        3       3
+		Timing checks:           400      49
+		Interconnect:            793       -
+		Delayed tcheck signals:  128      44
+		Simulation timescale:    1ps
+	Writing initial simulation snapshot: worklib.testfixture1:v
+Loading snapshot worklib.testfixture1:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+--------------------------- Simulation Pattern is ready !!---------------------------
+FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
+(C) 1996 - 2020 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'STI_DAC.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+--------------------------- [ testfuxture1.v ] Simulation START !!---------------------------
+--------------------------- Simulation at parallel data input stage !!---------------------------
+--------------------------- Simulation at serial data output and result verify !! ---------------------------
+--------------------------- so_data simulation FINISH !!---------------------------
+============================================================================
+
+ \(^o^)/  The simulation result of so_data is PASS!!!
+
+============================================================================
+--------------------------- OM-memory and EM-memory simulation FINISH !!---------------------------
+============================================================================
+
+ \(^o^)/  The simulation result of OM-memory and EM-memory is PASS!!!
+
+============================================================================
+Simulation complete via $finish(1) at time 23148736 PS + 0
+./testfixture1.v:196      $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Aug 12, 2022 at 16:04:42 CST  (total: 00:00:01)

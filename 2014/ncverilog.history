@@ -1,0 +1,7 @@
+s1(12Aug2022:16:02:40):  ncverilog testfixture1.v STI_DAC_syn.v -v tsmc13_neg.v +define+SDF +access+r 
+s2(12Aug2022:16:02:59):  ncverilog testfixture1.v STI_DAC_syn.v -v tsmc13_neg.v +define+SDF +access+r 
+s3(12Aug2022:16:03:26):  ncverilog testfixture1.v STI_DAC_syn.v -v tsmc13_neg.v +define+SDF +access+r 
+s4(12Aug2022:16:03:41):  ncverilog testfixture1.v STI_DAC_syn.v -v tsmc13_neg.v +define+SDF +access+r 
+s5(12Aug2022:16:04:03):  ncverilog testfixture1.v STI_DAC_syn.v -v tsmc13_neg.v +define+SDF +access+r 
+s6(12Aug2022:16:04:10):  ncverilog testfixture2.v STI_DAC_syn.v -v tsmc13_neg.v +define+SDF +access+r 
+s7(12Aug2022:16:04:41):  ncverilog testfixture1.v STI_DAC_syn.v -v tsmc13_neg.v +define+SDF +access+r 

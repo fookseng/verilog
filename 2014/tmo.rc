@@ -1,0 +1,98 @@
+Magic 271485
+Revision Verdi_Q-2020.03
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 23 1920 1017 172 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/ic_contest/P76107085/2014/STI_DAC.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 0.000000 231648.301030
+cursor 15000.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 2
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/ic_contest/P76107085/2014/STI_DAC.fsdb"
+addSignal -h 15 /testfixture1/u_rtl/clk
+addSignal -h 15 -holdScope reset
+addSignal -expanded -h 15 -holdScope counter[5:0]
+addSignal -h 15 -holdScope counter[5]
+addSignal -h 15 -holdScope counter[4]
+addSignal -h 15 -holdScope counter[3]
+addSignal -h 15 -holdScope counter[2]
+addSignal -h 15 -holdScope counter[1]
+addSignal -h 15 -holdScope counter[0]
+addSignal -h 15 -holdScope even1_wr
+addSignal -h 15 -holdScope even2_wr
+addSignal -h 15 -holdScope even3_wr
+addSignal -h 15 -holdScope even4_wr
+addSignal -h 15 -holdScope load
+addSignal -h 15 -holdScope nxt_state[2:0]
+addSignal -h 15 -holdScope odd1_wr
+addSignal -h 15 -holdScope odd2_wr
+addSignal -h 15 -holdScope odd3_wr
+addSignal -h 15 -holdScope odd4_wr
+addSignal -h 15 -holdScope oem_addr[4:0]
+addSignal -h 15 -holdScope oem_dataout[7:0]
+addSignal -h 15 -holdScope oem_finish
+addSignal -h 15 -holdScope pi_data[15:0]
+addSignal -h 15 -holdScope pi_end
+addSignal -h 15 -holdScope pi_fill
+addSignal -h 15 -holdScope pi_length[1:0]
+addSignal -h 15 -holdScope pi_low
+addSignal -h 15 -holdScope pi_msb
+addSignal -h 15 -holdScope so_data
+addSignal -h 15 -holdScope so_valid
+addGroup "G2"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/ic_contest/P76107085/2014/STI_DAC.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/testfixture1"
+
+SCOPE_LIST_BEGIN
+"/testfixture1"
+"/testfixture1/u_rtl"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+

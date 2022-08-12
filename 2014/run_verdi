@@ -1,0 +1,3 @@
+rm -rf nverlog.log
+rm -rf novas*
+verdi -autoalis testfixture1.v  STI_DAC.v

@@ -1,0 +1,1 @@
+ncverilog testfixture1.v STI_DAC_syn.v -v tsmc13_neg.v +define+SDF +access+r
