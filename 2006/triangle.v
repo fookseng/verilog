@@ -110,6 +110,18 @@ begin
    if(reset)
       begin
          counter <= 0;
+         Xcoor[0] <= 3'b000;
+         Xcoor[1] <= 3'b000;
+         Xcoor[2] <= 3'b000;
+         Ycoor[0] <= 3'b000;
+         Ycoor[1] <= 3'b000;
+         Ycoor[2] <= 3'b000;
+         xo <= 0;
+         yo <= 0;
+         x <= 0;
+         x1 <= 0;
+         y1 <= 0;
+         y2 <= 0;
       end
    else 
       begin
