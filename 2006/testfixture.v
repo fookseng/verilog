@@ -1,15 +1,15 @@
 `timescale 100ps/10ps
-`define CYCLE      25	// Modify your clock period here (unit: 0.1ns)
+`define CYCLE      4.8	// Modify your clock period here (unit: 1ns)
 `define INFILE1    "input.dat"
 `define IN_LENGTH  6
 `define INFILE2    "expect.dat"
 `define OUT_LENGTH 48
-`define SDF_FILE   "triangle.sdf"
+`define SDF_FILE   "triangle_syn.sdf"
 
 module test;
 parameter INPUT_DATA = `INFILE1;
 parameter EXPECT_DATA = `INFILE2;
-parameter period = `CYCLE * 10; 
+parameter period = `CYCLE*10; 
 reg     clk;
 reg     reset;
 reg     nt;
@@ -30,8 +30,11 @@ reg [5:0]  data_tmp_i1, data_tmp_i2, data_tmp_i3;
 
 triangle top(clk, reset, nt, xi, yi, busy, po, xo, yo);
 
-//initial $sdf_annotate(`SDF_FILE,top);
-
+initial $sdf_annotate(`SDF_FILE,top);
+initial begin
+        $fsdbDumpfile("STI_DAC.fsdb");
+        $fsdbDumpvars;
+        end
 initial	$readmemb(INPUT_DATA,  data_base);
 initial	$readmemb(EXPECT_DATA,  data_base_expect);
 
@@ -142,6 +145,7 @@ always @(posedge clk) begin
       $display("---------------------------------------------");
       total_num = total_cycle_num * period; 
       $display("Total delay: %d ns", total_num );
+      $display("Total cycle num: %d", total_cycle_num );
       $display("---------------------------------------------");
       $finish;
    end
